@@ -1,0 +1,47 @@
+.content{
+  height: calc(100vh - 96px);
+  background: #f5f6f7;
+}
+.contentBg{
+  background: #fff;
+  padding: 0 32px 32px 32px;
+}
+.header{
+  background: #fff;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #edeef0;
+  font-size: 32px;
+  padding: 0 40px;
+  font-family: PingFang SC;
+  .headerChild{
+    flex: 1;
+  }
+  .right{
+    text-align: right;
+  }
+}
+.select{
+  display: flex;
+  align-items: center;
+  .up{
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: #81858c;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+}
+.choose{
+  color: #1091ff;
+  .up{
+    border-top-color: #1091ff;
+  }
+}
+
+.search{
+  width: 40px;
+  height: 40px;
+}

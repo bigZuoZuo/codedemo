@@ -1,0 +1,372 @@
+@import '../../common/common.scss';
+
+.detail-page {
+  width: 100%;
+  height: 100vh;
+
+  &__pics {
+    height:496px;
+    background:rgba(230,231,235,1);
+
+    &.hide {
+      display: none;
+    }
+
+    .list__container {
+      width: 100%;
+      height: 496px;
+
+      .list__item {
+        .img {
+          width: 100%;
+          height: 496px;
+        }
+      }
+    }
+  }
+
+  &__body {
+    position: relative;
+    padding-bottom: 146px;
+    top: -12px;
+    border-radius: 12px 12px 0px 0px;
+    background: #fff;
+    .company-info {
+      // min-height: 154px;
+      padding: 20px 0;
+      border-bottom: 2px solid #E1E2E6;
+      box-sizing: border-box;
+      margin: 0 32px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      .title {
+        .company {
+          font-size:48px;
+          font-family:PingFang SC;
+          font-weight:500;
+          color:#101F42;
+        }
+        .number {
+          font-size:28px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:#4F545E;
+        }
+      }
+      .cate {
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:#4F545E;
+        margin-top: 4px;
+      }
+      .line{
+        font-size: 28px;
+        padding: 0 12px;
+        color:#B3B5B9;
+      }
+    }
+
+    .company-contact {
+      box-sizing: border-box;
+      margin: 10px 32px 0;
+      border-bottom: 2px solid #E1E2E6;
+      .contact-item {
+        display: flex;
+        justify-content: space-between;
+        height: 76px;
+        align-items: center;
+        .label {
+          font-size:32px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:rgba(16,31,66,1);
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          .person,
+          .phone,
+          .status {
+            font-size:32px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(122,132,153,1);
+          }
+
+
+          .hide {
+            display: none;
+          }
+        }
+      }
+      .patrol-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        .patrol-item {
+          height: 64px;
+          font-size:28px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:rgba(65,79,112,1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:rgba(237,245,252,1);
+          border-radius:36px;
+          padding: 0 24px;
+          margin: 0 16px 16px 0;
+        }
+      }
+    }
+
+    .company-address {
+      display: flex;
+      align-items: center;
+      height: 120px;
+      box-sizing: border-box;
+      margin: 0 32px;
+      border-bottom: 2px solid #E1E2E6;
+      .icon {
+        display: inline-block;
+        background-image: url(#{$rootUrl}/assets/pollution-manage/address.png);
+        width: 64px;
+        height: 64px;
+        background-size: 64px 64px;
+      }
+      .addr {
+        font-size:28px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:#1E2430;
+        margin-left: 12px;
+        flex: 1;
+      }
+    }
+
+    .company-remark {
+      min-height: 102px;
+      display: flex;
+      padding-bottom: 32px;
+      box-sizing: border-box;
+      margin: 32px 32px 0 32px;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        font-size:36px;
+        font-family:PingFang SC;
+        font-weight:500;
+        color:rgba(16,31,66,1);
+      }
+      .remark {
+        font-size:32px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(27,46,89,1);
+        margin-top: 12px;
+      }
+    }
+
+    .space {
+      height:24px;
+      background:rgba(242,245,247,1);
+    }
+
+    .company-patrol {
+      height: 104px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      margin: 0 32px;
+      .label {
+        font-size:36px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(16,31,66,1);
+        min-width: 260px;
+      }
+      .content {
+        word-break: break-all;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        .icon {
+          display: block;
+          background-image: url(#{$rootUrl}/assets/pollution-manage/arrow.png);
+          width: 36px;
+          height: 36px;
+          background-size: 36px 36px;
+          margin-left: 10px;
+          transform: rotate(90deg);
+        }
+        .num {
+          height:30px;
+          background:rgba(232,60,60,1);
+          box-shadow:0px 2px 4px rgba(255,33,33,0.14);
+          padding: 0 10px;
+          line-height: 30px;
+          font-size:24px;
+          font-family:PingFang SC;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          border-radius: 16px 16px 16px 0;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    position: fixed;
+    height: 146px;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    width: 100%;
+    box-sizing: border-box;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width:332px;
+      height:96px;
+      background:rgba(255,255,255,1);
+      border:2px solid rgba(16,145,255,1);
+      border-radius:8px;
+      box-sizing: border-box;
+      font-size:32px;
+      font-family:PingFang SC;
+      font-weight:400;
+      color:rgba(16,145,255,1);
+
+      &.edit {
+        background: #1091FF;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.at-modal__content {
+  min-height: auto !important;
+  text-align: center;
+}
+
+.scroll_box{
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  white-space: nowrap;
+}
+.item_list{
+  width: 412px;
+  height: 256px;
+  margin-right: 24px;
+  padding-left: 32px;
+  display: inline-block;
+  border-left: 8px solid #1091ff;
+  border-radius:8px;
+  .label{
+    color:#4F545E ;
+    font-size: 28px;
+    margin-top: 24px;
+  }
+  .content{
+    color:#1E2430 ;
+    font-size: 32px;
+  }
+  .icon {
+    display: inline-block;
+    background:#1091ff url(#{$rootUrl}/assets/pollution-manage/icon-phone.png);
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 32px;
+  }
+  .phone{
+    display: flex;
+  }
+
+
+}
+.card0{
+  position: relative;
+  background: #edf5fc;
+  border-color:#1091ff;
+  margin:24px 0 24px 24px;
+  .icon{
+    background-color:#1091ff;
+  }
+}
+.card1{
+  position: relative;
+  background: #fcedde;
+  border-color:#f89633;
+  margin:24px 0 24px 24px;
+  .icon{
+    background-color:#f89633;
+  }
+}
+.card2{
+  position: relative;
+  background: #dff0e3;
+  border-color:#51b565;
+  margin:24px 0 24px 24px;
+  .icon{
+    background-color:#3bb7c7;
+  }
+}
+.card3{
+  position: relative;
+  background: #e6f3f5;
+  border-color:#1091ff;
+  margin:24px 0 24px 24px;
+  .icon{
+    background-color:#1091ff;
+  }
+}
+
+.content{
+  margin-top:10px;
+  color: #1E2430;
+}
+.phoneIcon {
+  display: block;
+  background-image: url(#{$rootUrl}/assets/pollution-manage/phone.png);
+  width: 44px;
+  height: 44px;
+  background-size: 44px 44px;
+  margin-left: 16px;
+}
+.noBorder{
+  border:0;
+}
+.nameWarp{
+  height: 90px;
+}
+.phoneWarp{
+  display: flex;
+  height: 120px;
+}
+
+.greenIcon{
+  width: 136px;
+  height: 108px;
+}
+.flex1{
+  flex: 1;
+}
+.greenConstruction{
+  position: absolute;
+  right: 0;
+  top:20px;
+}

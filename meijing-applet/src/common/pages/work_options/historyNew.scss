@@ -1,0 +1,85 @@
+.history{
+  font-family: PingFang SC, PingFang SC-Medium;
+  //background: red;
+  .historyListWarp{
+    //width: 680px;
+    //padding: 0 32px;
+    height: calc(100vh - 16px - 90px);
+    overflow: hidden;
+  }
+  .historyList{
+    margin: 0 32px;
+    //width: 680px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #f0f0f0;
+    .title{
+      font-size: 32px;
+      font-weight: bold;
+      padding-top: 32px;
+      padding-bottom: 16px;
+    }
+    .label{
+      font-size: 28px;
+      color:#81858c ;
+    }
+    .text{
+      font-size: 28px;
+      color:#1e2430 ;
+    }
+    .general{
+      font-size: 28px;
+      background: #ffebd8;
+      padding: 2px 20px;
+      color: #e34c51;
+      font-weight: bold;
+      font-weight: 500;
+      border-radius: 20px;
+    }
+    .serious{
+      background: #ffddde;
+      padding:0px 24px;
+      color: #e34c51;
+      font-weight: bold;
+      font-weight: 500;
+      border-radius: 30px;
+    }
+  }
+  .row{
+    padding: 8px 0;
+  }
+}
+.flex{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+}
+
+.Empty{
+  padding-top:30%;
+}
+.more {
+  font-size:28px;
+  font-weight:400;
+  color:rgba(65,79,112,1);
+  width: 100%;
+  margin: 40px 0;
+  align-items: center;
+  text-align: center;
+
+}
+.space{
+  background: #f5f6f7;
+  height: 16px;
+}
+.loadHeader{
+  width: 100%;
+  top: 0px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  background: #fff;
+}

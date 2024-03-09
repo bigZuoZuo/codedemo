@@ -1,0 +1,153 @@
+.page {
+  //background: #f5f6f7;
+  //height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  height: 226px;
+  overflow: hidden;
+  position: relative;
+
+  .topImg {
+    margin-top: -50px;
+    width: 750px;
+    height: 352px;
+  }
+
+  .txt {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 686px;
+    padding: 32px;
+    color: #fff;
+    overflow: hidden;
+    font-family: PingFang SC, PingFang SC-Bold;
+
+    .headerWarp {
+      display: flex;
+      font-size: 36px;
+
+      .header {
+        flex: 1;
+        height: 50px;
+        align-items: center;
+        font-size: 32px;
+      }
+
+      .flag {
+        font-size: 28px;
+        padding: 4px 18px;
+        background: #f48300;
+        border-radius: 24px;
+      }
+
+      .failure {
+        font-size: 28px;
+        padding: 4px 18px;
+        background: #e04e4e;
+        border-radius: 24px;
+      }
+
+      .success {
+        font-size: 28px;
+        padding: 4px 18px;
+        background: #51b565;
+        border-radius: 24px;
+      }
+    }
+
+    .titleList {
+      font-size: 28px;
+      margin-top: 16px;
+      display: flex;
+    }
+  }
+}
+
+.content {
+  background: #f5f6f7;
+  padding: 32px;
+  //z-index: 3;
+  //height:calc(100vh - 352px);
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.listWarp {
+  margin-bottom: 32px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0 12px 12px 12px;
+  min-height: 200px;
+
+  //&:first-child {
+  //  position: relative;
+  //  margin-top: -96px;
+  //}
+
+
+
+  .header {
+    padding: 32px 12px 8px 12px;
+    line-height: 1.5;
+    font-size: 32px;
+    color: #101f42;
+  }
+
+  .imgList {
+    .img {
+      height: 196px;
+      width: 196px;
+      margin: 12px;
+    }
+  }
+
+  .description {
+    font-size: 28px;
+    color: #1e2430;
+    padding: 12px 12px 24px 12px;
+  }
+}
+
+
+.iconSuccess {
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.tabs {
+  background: #fff;
+  display: flex;
+
+  .item {
+    height: 88px;
+    font-size: 32px;
+    color: #414f70;
+    flex: 1;
+    text-align: center;
+    .itemName {
+      height: 86px;
+      line-height: 86px;
+      display: inline-block;
+      border-bottom: 6px solid #fff;
+    }
+    .choose {
+      font-weight: 500;
+      color: #1091ff;
+      border-bottom: 6px solid #1091ff;
+    }
+  }
+}
+

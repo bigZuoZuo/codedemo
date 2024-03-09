@@ -1,0 +1,146 @@
+page {
+  width: 100%;
+  height: 100%;
+
+  .root {
+    height: 100%;
+    width: 100%;
+
+    .contentInputView{
+        // height: 244px;
+        margin: 20px 28px 0px;
+    }
+
+    // .at-textarea__textarea {
+    //   padding: 0 !important;
+    //   margin: 0 -16px;
+    //   border: none;
+    // }
+
+    // .simple_input{
+    //   .at-textarea{
+    //     border: 0px !important;
+    //   }
+    // }
+
+    .space_view{
+      width: 100%;
+      height: 40px;
+    }
+
+    .imagePickView{
+      margin-top: 20px;
+      margin-bottom: 24px;
+      .at-image-picker__choose-btn{
+        border-top: 0px !important;
+        border-bottom: 0px !important;
+        border-left: 0px !important;
+        border-right: 0px !important;
+        background: #F2F4F7;
+      }
+    }
+
+    // .at-textarea {
+    //   border: none;
+    // }
+
+    // .at-textarea__textarea {
+    //   height: 200px;
+    //   padding: 15px;
+
+    // }
+
+    .group-item {
+      box-sizing: border-box;
+      padding: 0 32px;
+
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #F0F0F0;
+        padding-top: 32px;
+        .top_title {
+          font-size: 32px;
+          font-family: PingFang SC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #101F42;
+        }
+        .chevron_right {
+
+        }
+      }
+      &__body {
+        padding-bottom: 32px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .tag-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #EDF5FC;
+          border-radius: 36px;
+          padding: 6px 16px;
+          margin: 22px 16px 0 0;
+          .tag-txt {
+            font-size: 28px;
+            font-family: PingFang SC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #0D86FF;
+          }
+        }
+      }
+
+      &__last {
+        .group-item__body {
+          border-bottom: 2px solid #F0F0F0;
+        }
+      }
+    }
+
+    .btn_group {
+      width: 100%;
+      position: fixed;
+      bottom: 0px;
+      padding: 20px;
+      box-sizing: border-box;
+
+      .btn {
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+      }
+
+      .at-button--primary {
+        background: #1091FF !important
+      }
+    }
+  }
+}
+
+page {
+  at-image-picker {
+    .at-image-picker__flex-item {
+        margin-left: 16px;
+
+        &:nth-child(4n+3) {
+            .at-image-picker__item {
+                width: calc(100% - 2px);
+            }
+        }
+    }
+    .at-image-picker__item {
+        border-radius: 0;
+        overflow: unset;
+        .at-image-picker__remove-btn {
+            top: -10px;
+            right: -10px;
+
+            width:28px;
+            height:28px;
+            background:rgba(16,145,255,1);
+            border-radius:50%;
+        }
+    }
+  }
+}

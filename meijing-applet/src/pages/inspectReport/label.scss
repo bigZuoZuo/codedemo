@@ -1,0 +1,23 @@
+
+.report-label-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 32px;
+  
+  .container {
+    .group {
+      .title {
+        font-size: 36px;
+        font-family: PingFang SC, PingFang SC-Medium;
+        font-weight: 500;
+        color: #101f42;
+      }
+      .labels {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+    }
+  }
+}

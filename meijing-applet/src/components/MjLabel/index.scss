@@ -1,0 +1,74 @@
+@import '../../common/common.scss';
+
+.mj-label {
+    display: inline-block;
+
+    .container {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 64px;
+        background: #f2f5f7;
+        border-radius: 8px;
+        padding: 0 16px;
+        .pre-img {
+            background-image: url(#{$rootAiJingUrl}/pages/report/icon-label-pre2.png);
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+        }
+        .label-txt {
+            font-size: 28px;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #414f70;
+            padding: 0 8px;
+        }
+        .end-img {
+            background-image: url(#{$rootAiJingUrl}/pages/report/icon-label-edit.png);
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            display: none;
+        }
+
+        &__data {
+            background: #e0f0ff;
+            border-radius: 4px;
+            .pre-img {
+                background-image: url(#{$rootAiJingUrl}/pages/report/icon-label-pre.png);
+            }
+            .label-txt {
+                color: #0088fe;
+            }
+            .end-img { 
+                display: block;
+            }
+        }
+    }
+}
+
+.mj-label-choose {
+    display: inline-block;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    background: #f2f4f7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 32px;
+    font-family: PingFang SC, PingFang SC-Regular;
+    font-weight: 400;
+    color: #414f70;
+    padding: 0 24px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+
+    &__active {
+        border: 2px solid #1091ff;
+        background: #ffffff;
+        color: #1091ff;
+    }
+}

@@ -1,0 +1,114 @@
+.content {
+  width: 750px;
+
+  .middleView {
+    width: 420px;
+    margin: 90px 166px 60px 166px;
+
+    .imageView {
+      width: 420px;
+      height: 120px;
+
+      .successIcon {
+        width: 120px;
+        height: 120px;
+        margin: 0px 150px;
+      }
+    }
+
+    .textView {
+      width: 420px;
+      margin: 62px 0px 0px 0px;
+
+      .text {
+        margin: 0px 130px;
+        font-size: 40px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        line-height: 56px;
+        color: rgba(16, 31, 66, 1);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.totalList {
+  background: #f7f9fa;
+  margin: 32px;
+  padding: 32px 40px;
+
+  .list {
+    display: flex;
+    height: 76px;
+    align-items: center;
+  }
+
+  .flex1 {
+    flex: 1;
+  }
+
+  .label {
+    font-size: 28px;
+    color: #4f545e;
+  }
+
+  .text {
+    font-size: 28px;
+    color: #1e2430;
+  }
+
+  .number {
+    font-size: 28px;
+    color: #e34c51;
+  }
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1b2e59;
+  margin: 40px 32px 16px 32px;
+}
+
+.imgList {
+  margin: 0 32px;
+
+  .list {
+    display: flex;
+    font-size: 28px;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 24px 0;
+  }
+
+  .img {
+    width: 128px;
+    height: 128px;
+    margin-right: 24px;
+  }
+
+  .imgIcon {
+    width: 32px;
+    height: 32px;
+    margin-top: 6px;
+    vertical-align: top;
+  }
+
+  .successColor {
+    color: #0cb984
+  }
+
+  .waringColor {
+    color: #f89633;
+  }
+
+  .errColor {
+    color: #e04e4e
+  }
+
+  .text {
+    line-height: 1.6;
+    color: #4f545e;
+    height: 96px;
+  }
+}

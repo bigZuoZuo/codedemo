@@ -1,0 +1,45 @@
+
+.onebox{
+    width: 166px;
+    height: 67px;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #000;
+    align-items: center;
+
+    .topShow{
+        width: 142px;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
+    .components-page{
+        width: 142px;
+        height: 6px;
+        position: relative;
+        border-radius: 6px 6px 6px 6px;
+        opacity: 1;
+        overflow: hidden;
+        .a{
+            width: 142px;
+            height: 6px;
+            background: #F0F1F2;
+            // background: blue;
+            border-radius: 6px 6px 6px 6px;
+            opacity: 1;
+        }
+        .b{
+            // width: 30px;
+            height: 6px;
+            background: #1091FF;
+            border-radius: 6px 6px 6px 6px;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+        }
+    }
+}

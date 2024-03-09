@@ -1,0 +1,65 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/inspectReport/report_jk",
+          "pathName": "pages/inspectReport/report_jk",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/person/index",
+          "pathName": "pages/person/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/works/examine",
+          "pathName": "pages/works/examine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user_request_verify/index",
+          "pathName": "pages/user_request_verify/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personalInfo/roleEdit",
+          "pathName": "pages/personalInfo/roleEdit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "value=4801&type=user_id&code=330600000000",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "scene=value%3D4801%26code%3D330600000000",
+          "scene": 1011
+        },
+        {
+          "name": "common/pages/webview/goal_home",
+          "pathName": "common/pages/webview/goal_home",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
