@@ -25,6 +25,8 @@ import Taro from '@tarojs/taro'
 dayjs.extend(relativeTime)
 dayjs.locale('zh-cn')
 
+
+
 if (Taro.getEnv() === Taro.ENV_TYPE.WEAPP) {
   require('umtrack-wx').init({
     appKey: '6200d84fe0f9bb492bf630e4',
