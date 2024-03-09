@@ -1,0 +1,14 @@
+/* 我的收藏页面 */
+.vote-records-page {
+  padding-top: 1200px;
+  /* background: url(./../../assets/page-bottom2.png) no-repeat left bottom/750px 786px; */
+  background-color: #381198;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+

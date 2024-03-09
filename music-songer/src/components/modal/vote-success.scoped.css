@@ -1,0 +1,86 @@
+@import url(./common.css);
+/* time-limit-bg */
+
+.vote-success-modal {
+  width: 554px;
+  height: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: url(./images/recommand-players-bg.png) no-repeat center center; */
+  /* background-size: cover; */
+  box-sizing: border-box;
+  background: #1F0056;
+  border-radius: 80px 80px 20px 20px;
+  border: 6px solid #7AF3FF;
+  margin: 250px 0 0 0;
+}
+
+.vote-success-modal span[data-title] {
+  position: absolute;
+  left: 50%;
+  background-size: cover;
+  transform: translateX(-50%);
+  top: -310px;
+  width: 750px;
+  height: 560px;
+  background: url(./../../assets/model-bg.png) no-repeat center center/100% 100%;
+  z-index: -1;
+}
+
+.vote-success-modal .vote-success-content {
+  margin: 60px auto 50px;
+  width: 424px;
+  font-size: 40px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 56px;
+}
+
+.vote-success-modal .vote-success-tip {
+  font-size: 30px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #ffffff;
+  line-height: 42px;
+  text-align: center;
+}
+
+.vote-success-modal .vote-success-action {
+  margin: 140px auto 0;
+  width: 394px;
+  height: 114px;
+  background: url(./images/support-vote.png) no-repeat center center;
+  background-size: cover;
+}
+
+
+.vote-success-modal .new-title{
+  font-size: 32px;
+  font-family: 'fangyuehe';
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.vote-success-modal .new-title::before{
+  background: url(./../../assets/sea.png) no-repeat center center/100% 100%;
+  width: 206px;
+  height: 94px;
+  content: '';
+}
+
+.vote-success-modal .new-title::after{
+  background: url(./../../assets/sea.png) no-repeat center center/100% 100%;
+  width: 206px;
+  height: 94px;
+  content: '';
+}

@@ -1,0 +1,122 @@
+@import url(./common.css);
+
+.lottery-code-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 670px;
+  min-height: 872px;
+  /* background: url(./images/recommand-players-bg.png) no-repeat center center; */
+  /* background-size: cover; */
+  box-sizing: border-box;
+  background: #1F0056;
+  border-radius: 80px 80px 20px 20px;
+  border: 6px solid #7AF3FF;
+  margin: 250px 0 0 0;
+  padding: 0 0 180px 0;
+}
+
+.lottery-code-modal span[data-title] {
+  position: absolute;
+  left: 50%;
+  background-size: cover;
+  transform: translateX(-50%);
+  top: -310px;
+  width: 750px;
+  height: 560px;
+  background: url(./../../assets/model-bg.png) no-repeat center center/100% 100%;
+  z-index: -1;
+}
+
+.lottery-code-modal .lottery-code-tip {
+  margin: 24px auto 40px;
+  width: 480px;
+  font-size: 36px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 56px;
+}
+
+.lottery-code-modal .lottery-code-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 6px;
+  width: 516px;
+  height: 66px;
+  background: linear-gradient(360deg, #1F0056 0%, #370472 100%);
+  border-radius: 10px;
+  border: 2px solid #4c10c0;
+  font-size: 32px;
+  color: #fff;
+}
+
+.lottery-code-modal .lottery-code-row span {
+  flex: 1;
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.lottery-code-modal .lottery-code-row span[data-copy] {
+  flex: 0 0 auto;
+  margin-right: 0;
+  width: 96px;
+  height: 54px;
+  background: url(./images/copy-text.png) no-repeat center center;
+  background-size: cover;
+}
+
+.lottery-code-modal .lottery-code-action {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 394px;
+  height: 114px;
+  background: url(./images/has-known.png) no-repeat center center;
+  background-size: cover;
+}
+
+.lottery-code-modal .lottery-code-layer {
+  height: 340px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.lottery-code-modal .new-title{
+  font-size: 32px;
+  font-family: 'fangyuehe';
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.lottery-code-modal .new-title::before{
+  background: url(./../../assets/sea.png) no-repeat center center/100% 100%;
+  width: 226px;
+  height: 94px;
+  content: '';
+}
+
+.lottery-code-modal .new-title::after{
+  background: url(./../../assets/sea.png) no-repeat center center/100% 100%;
+  width: 226px;
+  height: 94px;
+  content: '';
+}

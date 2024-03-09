@@ -1,0 +1,45 @@
+.lottery-records-pages {
+  padding-top: 1200px;
+  /* background: url(./../../assets/page-bottom2.png) no-repeat left bottom/750px 786px; */
+  background-color: #381198;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.record-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  width: 630px;
+  height: 104px;
+  background: #2b1a63;
+  border-radius: 10px;
+  border: 2px solid #5e0bf1;
+  box-sizing: border-box;
+  font-size: 28px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #ff76ea;
+  /* line-height: 84px; */
+}
+
+#modal-message-bottom {
+  width: 100%;
+  height: 23px;
+}
+
+.award-name {
+  flex: 1;
+}
+
+.record-date {
+  width: 286px;
+  white-space: nowrap;
+}

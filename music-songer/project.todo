@@ -1,0 +1,66 @@
+Project:
+  需要加分页的地方：
+  ✔ getSubscribeList @done(21-07-24 22:06)
+  ✔ getLotteryLogs @done(21-07-24 22:01)
+  ✔ getUserVoteLog @done(21-07-24 21:58)
+
+  ✔ lottery-records 24小时 @done(21-07-25 19:18)
+
+  ✔ 随心听里面的投票按钮 @done(21-07-28 16:43)
+
+  ☐ 已淘汰不给事件
+
+  ☐ pk榜的pk结果（淘汰信息）
+
+  不显示半决赛pk tab 显示什么榜单
+
+  done:
+    // 榜单合集
+    ✔ 获取歌神榜 getSingerRank @done(21-07-16 15:33)
+    ✔ 获取应援榜 getUserRank @done(21-07-16 15:35)
+    ✔ 获取人气日榜 getPopularityRank @done(21-07-16 15:36)
+    ✔ 金牌音乐厅 getGoldRooms @done(21-07-16 15:39)
+
+    // 歌手合集
+    ✔ 获取歌手合集 getSongs @done(21-07-16 11:25)
+
+    // 几个赛事
+    ✔ 晋级赛pk榜搜索 getPkMatchSearch @done(21-07-18 17:19)
+    ✔ 通用搜索 getCommonMatchSearch // 完成了榜单合集的 @done(21-07-18 17:26)
+    ✔ 获取晋级赛、半决赛pk getPks @done(21-07-18 17:26)
+    ✔ 获取海选赛，晋级赛，半决赛，决赛榜单列表 getRank @done(21-07-18 17:37)
+
+    ✔ 获取显示限时礼包购买 getGiftPack @done(21-07-15 16:38)
+    ✔ 获取用户幸运币数量 getUserIcon @done(21-07-15 18:08)
+
+    ✔ 歌友会列表 getSubscribeList @done(21-07-15 14:49)
+    ✔ 歌友会预约 postSubscribe @done(21-07-15 14:56)
+
+    ✔ 获取用户投票记录 getUserVoteLog @done(21-07-15 16:09)
+    ✔ 获取用户抽奖码 getLotteryCode @done(21-07-15 17:58)
+    ✔ 奖池信息 getLotteryPool @done(21-07-16 19:00)
+
+    ✔ 预约公演赛 postSubscribeScene @done(21-07-16 18:18)
+    ✔ 获取推荐歌曲 getRecommendSingers @done(21-07-15 15:46)
+
+    // 随心听页面
+    ✔ 随心听 getSongList @done(21-07-16 14:11)
+    ✔ 收藏列表 getLikeLogs @done(21-07-16 14:14)
+
+    // 歌曲
+    ✔ 收藏/取消收藏歌曲 postSingerLike @done(21-07-19 17:50)
+    ✔ 播放歌曲 postBroadcase @done(21-07-19 17:59)
+
+    // 抽奖
+    ✔ 抽奖 postLottery @done(21-07-15 14:36)
+    ✔ 获取抽奖记录 getLotteryLogs @done(21-07-15 14:29)
+
+    ✔ 创建订单两个接口 @done(21-07-22 16:34)
+
+    // 应援锦鲤的接口
+    ✔ 获取用户应援锦鲤信息 getUserSupport @done(21-07-22 21:49)
+    ✔ 应援锦鲤领取奖励 postReceiveReward @done(21-07-22 21:49)
+
+    ✔ 获取中奖码 getLuckyCodes @done(21-07-22 21:54)
+    ✔ 充值后刷新上一个列表 @done(21-07-22 22:44)
+    ✔ signup 上传提示页 @done(21-07-31 22:51)
