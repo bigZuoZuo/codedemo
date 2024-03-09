@@ -1,0 +1,65 @@
+// 下拉框选项公共样式（单选和多选）
+// .ant-select-dropdown--multiple {}
+.ant-select {
+  .ant-select-selector{
+    &:hover,&:focus,&:focus-within {
+      background-color: #ffffff !important;
+      box-shadow: 0px 2px 6px 0px
+          rgba(15, 127, 211, 0.1);
+      border-radius: 2px;
+      border: solid 1px #91d0ff !important;
+      background-image: none !important;
+    }
+    .ant-select-selection-overflow{
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      .ant-select-selection-overflow-item{
+        .ant-select-selection-item{
+          line-height: 22px;
+          color: rgba(0,0,0,.65);
+          background-color: #fafafa;
+          border: 1px solid #e8e8e8;
+        }
+      }
+    }
+  }
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  height: 40px;
+}
+// .ant-select .ant-select-selector .ant-select-selection-item, .ant-select .ant-select-selector .ant-select-selection-placeholder {
+//   line-height: 38px;
+// }
+.ant-select-dropdown{
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px 0 rgba(15,127,211,.2);
+  border-radius: 2px;
+  border: 1px solid #d4edff;
+  .ant-select-item{
+    height: 40px;
+    line-height: 32px;
+    color: #727790;
+  }
+  // 选中
+  .ant-select-item-option-selected{
+    background-color: white;
+    color: #5654be;
+    font-weight: 600;
+  }
+  // 鼠标滑过
+  .ant-select-item-option-active{
+    background-color: #e6f8ff;
+    color: #5654be;
+    font-weight: normal;
+  }
+}
+// 右边滑动条样式
+.rc-virtual-list-scrollbar {
+  width: 4px !important;
+  background-color: #f6f7fb !important;
+  .rc-virtual-list-scrollbar-thumb{
+    height: 50px !important;
+    background-color: #d4edff !important;
+    border-radius: 2px !important;
+  }
+}

@@ -1,0 +1,101 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
+  // background: @layout-body-background;
+}
+.content {
+  position: relative;
+  display: flex;
+  // justify-content: center;
+  margin: auto;
+  background-color: #fff;
+  .content_lefts {
+    display: none;
+  }
+  .content_LoginForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .ant-input-affix-wrapper {
+      background-color: #f4faff !important;
+    }
+    .LoginForm_img {
+      // width: 150px;
+      height: 120px;
+      margin: 0 auto;
+      background-image: url('../../../../static/images/logo.png');
+      background-repeat: no-repeat;
+      // background-position: center 100px;
+      background-size: 60% 110%;
+      margin-left: 79px;
+    }
+    .LoginForm_bot {
+      text-align: center;
+    }
+    .LoginForm_buttom {
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin: 40px auto;
+      margin-bottom: 24px;
+      font-size: 18px;
+      background-color: #5654be;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px 0 rgba(15, 127, 211, 0.3);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .error_Display {
+      position: absolute;
+      bottom: -50px;
+      width: 100%;
+      padding: 9px 0;
+      color: #d80c18;
+      text-align: center;
+      background-color: rgba(216, 12, 24, 0.06);
+    }
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-image: url('../../../../static/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .content {
+    width: 900px;
+    height: 540px;
+    padding-left: 480px;
+    .content_lefts {
+      position: absolute;
+      // top: -30px;
+      // left: 20px;
+      top: 0px;
+      left: 0px;
+      display: block;
+      width: 384px;
+      height: 648px;
+      background-image: url('../../../../static/images/banner4.png');
+      background-repeat: no-repeat;
+      // background-size: 100% 100%;
+      background-size: 100% 83.3%;
+      opacity: 1;
+    }
+    .LoginForm_img {
+      width: 249px !important;
+    }
+    .error_Display {
+      bottom: 0 !important;
+      left: -125px;
+      width: 550px !important;
+    }
+  }
+}

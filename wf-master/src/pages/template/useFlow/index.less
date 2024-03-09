@@ -1,0 +1,262 @@
+@import '~antd/es/style/themes/default.less';
+
+.flowDetail {
+    overflow-x     : auto;
+    display        : flex;
+    display        : -webkit-flex;
+    flex-direction : row;
+    flex-wrap      : nowrap;
+    justify-content: flex-start;
+    padding-bottom : 30px;
+
+    .hand {
+        cursor: pointer;
+
+        label,
+        .ant-select-disabled .ant-select-selection {
+            cursor: pointer;
+        }
+    }
+
+    .middle {
+        width              : 120px;
+        min-width          : 120px;
+        background-image   : url('../../../../static/images/tranfans.png');
+        background-position: center center;
+        background-repeat  : no-repeat;
+        background-size    : 66px 46px;
+    }
+
+    .moduleRight {
+        // min-height      : 916px;
+        height             : calc(100% - 40px);
+        width              : 1090px;
+        // background-color: #fbfcfe;
+        background-color   : rgb(251, 252, 254);
+        border-radius      : 0px 0px 4px 4px;
+        border             : solid 1px #eaeff8;
+        display            : flex;
+        display            : -webkit-flex;
+        flex-direction     : row;
+        flex-wrap          : nowrap;
+        justify-content    : flex-start;
+
+        .dragArea {
+            width: 250px;
+
+            .moduleArrow {
+                padding-top: 30px;
+                margin     : 20px;
+                // border  :1px dashed #c1c1c1;
+                min-height : 300px;
+                width      : 210px;
+
+                .item {
+                    width   : 200px;
+                    height  : 96px;
+                    position: relative;
+
+                    .title {
+                        width         : 140px;
+                        height        : 40px;
+                        line-height   : 40px;
+                        text-align    : center;
+                        // font-weight: 600;
+                        border-radius : 4px;
+                        position      : absolute;
+                        right         : 36px;
+                        font-size     : 16px;
+                    }
+
+                    .title_normal {
+                        background-image     : linear-gradient(0deg, #d8ebfd 0%, #dcedfd 66%, #e0effd 100%), linear-gradient(#eef7ff, #eef7ff);
+                        background-blend-mode: normal, normal;
+                        box-shadow           : 0px 2px 4px 0px rgba(45, 139, 255, 0.1);
+                        border               : solid 1px #c9dff3;
+                        color                : #4470c0;
+                    }
+
+                    .title_active {
+                        background-image     : linear-gradient(0deg, #5d92fe 0%, #6da7ff 100%), linear-gradient(#eef7ff, #eef7ff);
+                        background-blend-mode: normal, normal;
+                        box-shadow           : 0px 3px 4px 0px rgba(0, 60, 205, 0.2);
+                        border               : solid 1px #5e9eff;
+                        color                : white;
+                    }
+
+                    .rightIcon {
+                        position           : absolute;
+                        right              : 0;
+                        top                : 12px;
+                        width              : 16px;
+                        height             : 16px;
+                        background-image   : url(../../../../static/images/icon_show.png);
+                        background-position: center center;
+                        background-repeat  : no-repeat;
+                        background-size    : 16px 16px;
+                        cursor             : pointer;
+                    }
+
+                    .show {
+                        background-image: url(../../../../static/images/icon_show.png);
+                    }
+
+                    .hide {
+                        background-image: url(../../../../static/images/icon_hide.png);
+                    }
+
+                    .arrow {
+                        position           : absolute;
+                        right              : 90px;
+                        top                : 40px;
+                        width              : 40px;
+                        height             : 56px;
+                        background-image   : url(../../../../static/images/arrow_down.png);
+                        background-position: center -2px;
+                        background-repeat  : no-repeat;
+                        background-size    : 18px 56px;
+                    }
+                }
+            }
+        }
+
+        .formArea {
+            width: 700px;
+
+            .moduleForm {
+                margin-top      : 50px;
+                background-color: white;
+                margin-left     : 20px;
+                margin-bottom   : 270px;
+                width           : 700px;
+                border          : 1px solid rgb(234, 239, 248);
+                border-radius   : 5px;
+
+                .title {
+                    width                : 700px;
+                    height               : 40px;
+                    background-image     : linear-gradient(#eef7ff, #eef7ff), linear-gradient(#ffffff, #ffffff);
+                    background-blend-mode: normal, normal;
+                    border-radius        : 4px 4px 0px 0px;
+                    border               : solid 1px #d5e8fa;
+                    line-height          : 40px;
+                    text-align           : center;
+                    font-size            : 16px;
+                    color                : #555964;
+                    font-weight          : bold;
+                }
+
+                .ant-form {
+                    margin-top     : 50px;
+                    margin-bottom  : 50px;
+                    display        : flex;
+                    display        : -webkit-flex;
+                    flex-direction : row;
+                    flex-wrap      : wrap;
+                    justify-content: center;
+
+                    .ant-form-item {
+                        display        : flex;
+                        display        : -webkit-flex;
+                        flex-direction : row;
+                        flex-wrap      : nowrap;
+                        justify-content: flex-start;
+                        width          : 500px;
+
+                        .ant-form-item-label {
+                            width       : 120px;
+                            margin-right: 20px;
+
+                            label {
+                                color    : #555964;
+                                font-size: 14px;
+                            }
+
+                            label::before {
+                                //display: none;
+                            }
+
+                            label::after {
+                                display: none;
+                            }
+
+                            .ant-form-item-required::before {
+                                content     : '*';
+                                color       : red;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .ant-form-item-control-wrapper {
+                            .ant-radio-group {
+                                margin-top: 9px;
+                            }
+                        }
+                    }
+                }
+
+                .bottomBtns {
+                    width     : 680px;
+                    margin    : auto;
+                    text-align: center;
+                    padding   : 30px 0;
+                    border-top: solid 1px #eaeff8;
+
+                    button {
+                       margin-right: 14px;
+                        // width                : 140px;
+                        // height               : 40px;
+                        // background-image     : linear-gradient(0deg, #f5fffe 0%, #ffffff 100%), linear-gradient(#26c9cd, #26c9cd);
+                        // background-blend-mode: normal, normal;
+                        // box-shadow           : 0px 3px 4px 0px rgba(0, 147, 145, 0.08);
+                        // border-radius        : 4px;
+                        // border               : solid 1px #afe2dd;
+                        // color                : #4fd6cc;
+                        // font-size            : 16px;
+                    }
+                }
+            }
+
+            .dispNone {
+                display: none;
+            }
+
+            .savebtn {
+                margin-left          : -150px;
+                width                : 140px;
+                height               : 40px;
+                background-image     : linear-gradient(0deg, #f5fffe 0%, #ffffff 100%), linear-gradient(#26c9cd, #26c9cd);
+                background-blend-mode: normal, normal;
+                box-shadow           : 0px 3px 4px 0px rgba(0, 147, 145, 0.08);
+                border-radius        : 4px;
+                border               : solid 1px #afe2dd;
+                color                : #4fd6cc;
+                font-size            : 16px;
+                margin-top           : 50px;
+                margin-bottom        : 50px;
+            }
+        }
+    }
+
+    &::-webkit-scrollbar {
+        /*height  : 6px;   !* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*!*/
+        width     : 8px;
+        height    : 8px;
+        background: #fff;
+    }
+
+    /*定义滚动条轨道（凹槽）样式*/
+    &::-webkit-scrollbar-track {
+        background-color: #fff;
+        padding         : 5px 0;
+    }
+
+    /*定义滑块 样式*/
+    &::-webkit-scrollbar-thumb {
+        width: 10px;
+        /* 滚动条滑块长度 */
+        height          : 10px;
+        border-radius   : 4px;
+        background-color: #e6f0ff;
+    }
+}

@@ -1,0 +1,68 @@
+.topicCompTypeCommon{
+  thead{
+    background: #eee;
+    td{
+      padding: 10px;
+    }
+  }
+  tbody{
+    td{
+      padding: 10px;
+    }
+  }
+}
+
+.topicSelect{
+  .selectedTd{
+    display: flex;
+    align-items: center;
+
+    .liNum{
+      margin-right: 20px;
+    }
+    .braftEditor{
+      width: calc(100% - 70px);
+      height: 150px;
+    }
+    .bf-content{
+      height: 100px;
+    }
+  }
+}
+
+.topicCloze{
+  .selectedTd{
+    display: flex;
+    align-items: center;
+  }
+  .braftEditor{
+    width: calc(100% - 120px);
+  }
+}
+
+// 判断题
+.topicJudge{
+  .selectedWord{
+    font-weight: 700;
+  }
+  .radio{
+    font-size: 23px;
+    color: #999;
+    cursor: pointer;
+  }
+  .selected{
+    color: rgb(22, 224, 39);
+  }
+}
+
+// 阅读理解
+.topicRead{
+  .checkedBoxItem{
+    margin-bottom: 10px;
+    .title{
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: 700;
+    }
+  }
+}

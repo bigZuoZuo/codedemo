@@ -1,0 +1,206 @@
+
+
+// 登录页面输入框样式修改
+.loginFormDiv {
+  .ant-input-affix-wrapper {
+    height: 50px;
+   
+   
+    background-image: none !important;
+    border: 1px solid @backgroundColor6 !important;
+    .ant-input {
+     
+    
+      background-image: none !important;
+    }
+    &:hover {
+      border: 1px solid @color4 !important;
+    }
+    &:focus {
+      border: 1px solid @color4 !important;
+    }
+  }
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none !important;
+  }
+}
+// 左侧导航栏样式
+.ant-layout-sider-children {
+  
+  .ant-pro-sider-logo{
+    .Brand{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      .Brand-title{
+        h1{
+          font-size: 20px;
+          &:first-child{
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+  .ant-menu-submenu-open {
+  
+    .ant-menu-inline {
+      
+    }
+  }
+  .ant-menu-item-only-child {
+    &::after{
+      border-color: @colorAfter;
+    }
+    .ant-menu-title-content {
+      .ant-pro-menu-item {
+        color: @colors;
+      }
+    }
+  }
+  .ant-menu-item-only-child.ant-menu-item-active {
+    // background-color: @backgroundColor7 !important;
+    background-color: rgba(157, 155, 255, 0.3) !important;
+    .ant-menu-title-content {
+      .ant-pro-menu-item {
+        color: @mainColor;
+      }
+    }
+  }
+  .ant-menu-submenu-active {
+    .ant-menu-submenu-title {
+      color: @mainColor;
+      .ant-menu-submenu-arrow {
+        color: @mainColor;
+      }
+    }
+  }
+  .ant-menu-submenu-title {
+    color: @colors;
+    .ant-menu-submenu-arrow {
+      color: @colors;
+    }
+  }
+  .ant-menu-item-selected {
+    // background-color: @backgroundColor7 !important;
+    background-color: rgba(157, 155, 255, 0.3) !important;
+    
+    .ant-menu-title-content {
+      .ant-pro-menu-item {
+        color: @mainColor;
+      }
+    }
+  }
+  .ant-pro-sider-links {
+    .anticon {
+      color: @colors !important;
+    }
+  }
+}
+
+// 公用弹框样式
+.ant-modal {
+  .ant-modal-content {
+    // min-height: 300px;
+    padding-bottom: 20px;
+   
+    .ant-modal-close {
+      width: 70px;
+      height: 70px;
+    }
+    .ant-modal-header {
+     
+      border-bottom: 1px solid @color3;
+      .ant-modal-title {
+        height: 37px;
+        color: @mainColor;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 37px;
+        text-align: center;
+      }
+    }
+    .ant-modal-footer {
+      border-top: 1px solid @color3;
+    }
+   
+  }
+}
+
+// 弹框底部按钮样式修改
+.bottomModal {
+  .ant-modal-footer {
+    text-align: center;
+    border-top: none !important;
+    .ant-btn {
+      width: 76px;
+      height: 40px;
+      margin: 0 5px;
+      color: #5654be;
+      background-color: rgba(157, 155, 255, 0.1);
+      border-radius: 4px;
+      border: solid 1px rgba(86, 84, 190, 0.4);
+    }
+    .ant-btn.ant-btn-primary {
+      color: #fff;
+      background-color: #5654be;
+    }
+  }
+}
+// Modal底部图片css
+.modalBottomImg {
+  padding-bottom: 56px;
+  background-image: url('../images/xaizai.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 56px;
+}
+
+// 定制弹框样式，带底部图片
+.customizedModal {
+  .ant-modal {
+    .ant-modal-content {
+      .modalBottomImg;
+    }
+    .bottomModal;
+  }
+}
+// 成功状态弹框
+.successModal {
+  .ant-modal-content {
+    .modalBottomImg;
+    .ant-modal-header {
+      display: none;
+    }
+    .ant-modal-body {
+      margin: auto;
+      padding-top: 140px;
+      text-align: center;
+      background-image: url('../images/modalsucicon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 180px 80px;
+    }
+    .bottomModal;
+  }
+}
+// 失败状态弹框
+.failModal {
+  .ant-modal-content {
+    .modalBottomImg;
+    .ant-modal-header {
+      display: none;
+    }
+    .ant-modal-body {
+      margin: auto;
+      padding-top: 140px;
+      text-align: center;
+      background-image: url('../images/modalfailicon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 180px 80px;
+    }
+    .bottomModal;
+  }
+}

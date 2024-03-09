@@ -1,0 +1,267 @@
+/* stylelint-disable function-url-quotes */
+/* stylelint-disable comment-whitespace-inside */
+@import '~antd/es/style/themes/default.less';
+.leftTree {
+  width: 100%;
+  height: 792px;
+  padding-right: 2px;
+  background-color: #f4faff;
+  border: solid 1px #91d0ff;
+  border-radius: 2px;
+  .treeArea {
+    height: calc(100% - 20px);
+    overflow-y: scroll;
+  }
+  .treeArea::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .treeArea::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    width: 100px;
+    height: 60px;
+    background: #d4edff;
+    border-radius: 3px;
+  }
+  .treeArea::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    background: #f6f7fb;
+    border-radius: 3px;
+  }
+}
+.treeArea {
+  margin: 10px 2px 10px 10px;
+  .ant-tree {
+    position: relative;
+    .ant-tree-list {
+      background-color: #f4faff;
+      .ant-tree-treenode {
+        .ant-tree-switcher {
+          margin-top: 6px;
+          background-color: transparent !important;
+        }
+        .ant-tree-indent {
+          .ant-tree-indent-unit {
+            width: 32px;
+            &::before {
+              top: -28px;
+              right: 20px;
+              bottom: -22px;
+              border-right: 1px solid #91d0ff;
+            }
+          }
+        }
+        .ant-tree-switcher_close,
+        .ant-tree-switcher_open {
+          &::after {
+            position: absolute;
+            top: 12px;
+            right: -11px;
+            display: inline-block;
+            width: 16px;
+            height: 1px;
+            background-color: #91d0ff;
+            content: '';
+          }
+          &::before {
+            position: absolute;
+            top: 20px;
+            left: 44px;
+            width: 1px;
+            height: 46px;
+            background-color: #91d0ff;
+            content: '';
+          }
+          .anticon {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            background-color: #91d0ff;
+            border-radius: 50%;
+            svg {
+              display: none;
+            }
+          }
+        }
+        .ant-tree-switcher_close {
+          .anticon {
+            &::after {
+              position: absolute;
+              left: 0;
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              color: white;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 11px;
+              text-align: center;
+              content: '+';
+            }
+          }
+        }
+        .ant-tree-switcher_open {
+          .anticon {
+            &::after {
+              position: absolute;
+              top: 7px;
+              left: 4px;
+              display: inline-block;
+              width: 8px;
+              height: 2px;
+              background-color: white;
+              content: '';
+            }
+          }
+        }
+        .ant-tree-switcher-noop {
+          position: relative;
+          .anticon {
+            svg {
+              display: none;
+            }
+          }
+          &::before {
+            position: absolute;
+            top: -23px;
+            right: 0;
+            z-index: 200;
+            display: none;
+            width: 1px;
+            height: 35px;
+            background-color: #91d0ff;
+            content: '';
+          }
+          &::after {
+            position: absolute;
+            top: 11px;
+            right: -12px;
+            display: inline-block;
+            width: 24px;
+            height: 1px;
+            background-color: #91d0ff;
+            content: '';
+          }
+        }
+        .ant-tree-node-content-wrapper {
+          width: 320px;
+          height: 50px;
+          margin-left: 10px;
+          padding: 1px;
+          text-align: left;
+          background-color: #f4faff !important;
+          &::before {
+            display: none;
+          }
+          &:hover {
+            background-color: transparent;
+            .treeNodeTitle {
+              position: relative;
+              .tree_icon {
+                position: absolute;
+                top: 7px;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-image: url(../../../../static/images/organize.png);
+                background-repeat: no-repeat;
+              }
+              .add {
+                right: -50px;
+                background-position: 0 0;
+              }
+              .edit {
+                right: -80px;
+                background-position: -48px 0;
+              }
+              .remove {
+                right: -110px;
+                background-position: -72px 0;
+              }
+              .add2 {
+                right: -50px;
+                background-position: -0 0;
+              }
+              .addOrg {
+                right: -80px;
+                background-position: -24px 0;
+              }
+              .edit2 {
+                right: -110px;
+                background-position: -48px 0;
+              }
+              .remove2 {
+                right: -140px;
+                background-position: -72px 0;
+              }
+            }
+          }
+          .ant-tree-title {
+            display: inline-block;
+            height: 36px;
+            padding: 0 20px;
+            color: #5654be;
+            line-height: 36px;
+            background-color: #fff;
+            border: solid 1px #91d0ff;
+            border-radius: 2px;
+            &:hover {
+              background-color: #d4edff;
+              border: solid 1px #91d0ff;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+      .ant-tree-treenode-switcher-close {
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 23px;
+          left: 44px;
+          // z-index:  200;
+          display: inline-block;
+          width: 1px;
+          height: 44px;
+          background-color: #91d0ff;
+          content: '';
+        }
+        .ant-tree-switcher-noop {
+          position: relative;
+          &::before {
+            position: absolute;
+            top: 12px;
+            right: 11px;
+            z-index: 1;
+            display: inline-block;
+            width: 1px;
+            height: 48px;
+            background-color: #91d0ff;
+            content: '';
+          }
+        }
+      }
+      .ant-tree-treenode-leaf-last {
+        &::before {
+          display: none;
+        }
+        .ant-tree-switcher_close {
+          &::before {
+            display: none;
+          }
+        }
+        .ant-tree-switcher-noop {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.removeBtns {
+  .ant-modal-confirm-btns {
+    float: none;
+    text-align: center;
+  }
+}

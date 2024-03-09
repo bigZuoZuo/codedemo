@@ -1,0 +1,28 @@
+/* stylelint-disable block-no-empty */
+@import '~antd/es/style/themes/default.less';
+
+.major_list {
+  display: flex;
+  flex-wrap: wrap;
+  .major_list_left {
+    width: 30%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: white;
+    .tree_treeNodes{
+      position: relative;
+      .icons{
+        position: absolute;
+        top: 0;
+        right: -100px;
+        .delete{
+          margin-left: 10px;
+          z-index: 200;
+        }
+      }
+    }
+  }
+  .major_list_right{
+    flex: 1;
+  }
+}

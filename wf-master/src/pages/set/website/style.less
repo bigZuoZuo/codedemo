@@ -1,0 +1,13 @@
+@import '~antd/es/style/themes/default.less';
+
+.optional {
+  color: @text-color-secondary;
+  font-style: normal;
+}
+.websiteFormItem{
+  .ant-form-item-label{
+    label::after{
+      display: none !important;
+    }
+  }
+}

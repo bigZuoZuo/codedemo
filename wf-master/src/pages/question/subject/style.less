@@ -1,0 +1,94 @@
+/* stylelint-disable block-no-empty */
+
+.knowledge_list {
+  display: flex;
+  // flex-wrap: wrap;
+  .knowledge_list_left {
+    width: 20%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: white;
+    .knowledge_list_tree{
+      border: 1px solid gainsboro;
+      min-height: 100px;
+      padding: 10px 0;
+    }
+  }
+  .knowledge_list_right{
+    width: 78%;
+    position: relative;
+  }
+}
+
+// 新增页面
+.addPageKonw_right{
+  .saveBox{
+    display: flex;
+    direction: rtl;
+  }
+  .title{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .selectKonwItemBox{
+    margin-bottom: 20px;
+  }
+  .checkedBoxItem{
+    margin-bottom: 10px;
+    .title{
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: 700;
+    }
+  }
+  .braftEditorBox{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+
+    .title{
+      width: 80px;
+      font-weight: bold;
+    }
+  }
+  .braftEditor{
+    width: 70%;
+    background: #fff;
+    height: 200px;
+  }
+  .bf-content{
+    height: 150px;
+  }
+}
+
+// 预览
+.confirmUpload{
+  margin:50px auto 0;
+  width: 600px;
+
+  .header{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .content li{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .lable{
+    width: 70px;
+    text-align: right;
+    color: #555;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .con{
+  }
+
+  .footerBox{
+    margin: 70px auto 0;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
