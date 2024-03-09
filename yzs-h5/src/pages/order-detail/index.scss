@@ -1,0 +1,166 @@
+.order-detail-page-container {
+  display: block;
+  position: relative;
+  background: #1b1135;
+  padding: 0 40px;
+  .order-container {
+    // overflow: auto;
+    margin-top: 20px;
+  }
+
+  .order-detail-goods-card {
+    margin-top: 20px;
+    background: #1e153f;
+    background-blend-mode: overlay;
+    mix-blend-mode: normal;
+    border: 2px solid #291e50;
+    box-sizing: border-box;
+    border-radius: 40px;
+  }
+
+  .order-operation {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 4;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -10px 60px 2px rgba(41, 39, 130, 0.1), inset 0px 2px 1px 2px rgba(255, 255, 255, 0.12);
+    border-radius: 100px 100px 0px 0px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  .order-total{
+    margin-left: 40px;
+    margin-right: auto;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    .order-price{
+      font-size: 42px;
+      font-weight: 500;
+    }
+  }
+
+  .order-tips{
+    margin-left: -40px;
+    margin-bottom: 20px;
+    padding: 14px 0;
+    width: 100vw;
+    text-align: center;
+    color: #FF8F28;
+    font-size: 24px;
+    font-weight: 400;
+    background: rgba(221, 107, 24, 0.19);
+    opacity: 1;
+  }
+
+  .order-operation-button {
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .order-operation-button[size='mini'] {
+    width: 192px;
+    overflow: hidden;
+    height: 80px;
+    line-height: 76px;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+  }
+
+
+  .order-operation-button[type='primary'][plain] {
+    background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+    box-shadow: inset 0px 0px 20px 8px rgba(173, 149, 255, 0.19);
+  }
+
+  .order-operation-button[type='primary'] {
+    border: 2px solid #291e50;
+  }
+
+  .address-box{
+    padding: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #1e153f;
+    background-blend-mode: overlay;
+    mix-blend-mode: normal;
+    border: 2px solid #291e50;
+    box-sizing: border-box;
+    border-radius: 40px;
+    .address-info{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+      .receive-address-info{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .receive-address-info-wang{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+        .receive-address-info-detail{
+          margin-top: 10px;
+        }
+      }
+    }
+    .arrow{
+      margin-left: auto;
+      width: 40px;
+      height: 40px;
+    }
+    .icon{
+      width: 96px;
+      height: 100px;
+      margin-right: 22px;
+    }
+    .icon2{
+      width: 86px;
+      height: 90px;
+      margin-right: 10px;
+    }
+    .logistics-info{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #3D2657;
+      .logistics-news-info{
+        margin-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .logistics-news{
+          font-size: 28px;
+          font-weight: 500;
+          color: #fff;
+          width: 420px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .logistics-date{
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}

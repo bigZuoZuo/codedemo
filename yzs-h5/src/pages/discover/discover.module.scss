@@ -1,0 +1,51 @@
+.discover {
+  color: aliceblue;
+  background-color: #1b1537;
+  padding-bottom: 150px;
+
+  :global {
+    .at-tabs__header {
+      background-color: #1b1135;
+      justify-content: center;
+      .at-tabs__item {
+        padding: 24px 32px;
+        font-size: 34px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.3);
+        flex: none;
+        &--active {
+          font-weight: bold;
+          color: #9373ff;
+          .at-tabs__item-underline {
+            width: 1.5em;
+            height: 6px;
+            border-radius: 6px 6px 0 0;
+            background: #9373ff;
+            margin: 0 auto;
+            left: 50%;
+            transform: translateX(-50%);
+            // box-shadow: 0px 0 30px 3px rgb(181 107 255 / 65%);
+          }
+        }
+      }
+    }
+    .at-tabs__underline {
+      background: transparent;
+    }
+  }
+
+  .discoverList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 32px;
+    margin-top: 24px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    .price{
+      font-size: 48px;
+      color: #fff;
+      font-family: Abel-Regular, Abel;
+      font-weight: 400;
+    }
+  }
+}

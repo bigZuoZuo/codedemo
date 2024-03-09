@@ -1,0 +1,29 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper{
+  margin: auto;
+  /* max-height: 100vh; */
+  /* text-align: center; */
+}
+
+.modal-btn-close {
+  /* margin-top: 2.66667vw; */
+  width: 15.73333vw;
+  height: 15.73333vw;
+  background: url(./images/close-new.png) no-repeat center center;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

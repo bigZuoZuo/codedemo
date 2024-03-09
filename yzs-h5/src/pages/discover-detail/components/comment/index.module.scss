@@ -1,0 +1,77 @@
+.comment {
+    display: flex;
+    padding: 32px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+
+    .userAvatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 48px 48px 48px 48px;
+        opacity: 1;
+        border: 2px solid #FFFFFF;
+        margin-right: 16px;
+        box-sizing: border-box;
+        background-color: #fff;
+        img{
+            object-fit: cover;
+          }
+    }
+
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        flex: 1;
+
+        .userName,
+        .time,
+        .content {
+            display: block;
+            word-break: break-all;
+        }
+
+        .moreContent {
+            color: #9373FF;
+            display: inline-block;
+        }
+
+        .author {
+            display: inline;
+            width: 64px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 28px 28px 28px 28px;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 8px;
+            padding: 4px 12px;
+        }
+
+        .time {
+            margin: 6px 0 16px 0;
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.65);
+        }
+    }
+}
+
+.hideBorder {
+    border: none;
+
+    .userAvatar {
+        width: 56px;
+        height: 56px;
+    }
+
+    .rightContent {
+
+        .userName,
+        .content {
+            font-size: 24px;
+        }
+
+        .time {
+            font-size: 20px;
+            margin: 0px 0 8px 0;
+        }
+    }
+}

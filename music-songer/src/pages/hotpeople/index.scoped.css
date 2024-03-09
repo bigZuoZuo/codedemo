@@ -1,0 +1,172 @@
+.hotpeople-page {
+  padding-top: 1024px;
+  /* background: url(./images/hot-banner.png) no-repeat left bottom/750px 924px; */
+  background: url(./images/page_bg.png) no-repeat left top/100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.hotpeople-page .banner{
+  width: 750px;
+  height: 924px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hotpeople-page .ques-one {
+  width: 680px;
+  height: 626px;
+  margin: 30px auto;
+  background: url(./images/bg_01.png) no-repeat left top/100% 100%;
+  padding: 170px 70px 0 70px;
+  position: relative;
+
+}
+
+.hotpeople-page .ques-one::before {
+  content: '';
+  position: absolute;
+  top: -104px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(./images/title_01.png) no-repeat left top/100% 100%;
+  width: 628px;
+  height: 138px;
+}
+
+.hotpeople-page .ques-one p {
+  font-size: 25px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 48px;
+}
+
+.hotpeople-page .ques-two {
+  width: 680px;
+  height: 542px;
+  margin: 130px auto;
+  background: url(./images/bg_02.png) no-repeat left top/100% 100%;
+  padding: 170px 70px 0 70px;
+  position: relative;
+}
+
+.hotpeople-page .ques-two::before {
+  content: '';
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(./images/title_02.png) no-repeat left top/100% 100%;
+  width: 670px;
+  height: 144px;
+}
+
+.hotpeople-page .ques-two p {
+  font-size: 25px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 48px;
+}
+
+.hotpeople-page .ques-two p::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin: 10px 20px 0 0;
+  display: inline-block;
+
+}
+
+.hotpeople-page .ques-three {
+  width: 680px;
+  height: 570px;
+  margin: 30px auto;
+  background: url(./images/bg_03.png) no-repeat left top/100% 100%;
+  padding: 124px 0 100px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+.hotpeople-page .ques-three::before {
+  content: '';
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(./images/title_03.png) no-repeat left top/100% 100%;
+  width: 670px;
+  height: 147px;
+}
+
+.hotpeople-page .ques-three .mudule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hotpeople-page .ques-three .mudule img {
+  width: 170px;
+  height: 135px;
+  display: block;
+}
+
+.hotpeople-page .ques-three .mudule span {
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.hotpeople-page .ques-four {
+  width: 680px;
+  height: 542px;
+  margin: 130px auto 180px;
+  background: url(./images/bg_02.png) no-repeat left top/100% 100%;
+  padding: 170px 70px 0 70px;
+  position: relative;
+}
+
+.hotpeople-page .ques-four::before {
+  content: '';
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(./images/title_04.png) no-repeat left top/100% 100%;
+  width: 306px;
+  height: 147px;
+}
+
+.hotpeople-page .ques-four p {
+  font-size: 25px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 48px;
+}
+
+.hotpeople-page .ques-four p::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin: 10px 20px 0 0;
+  display: inline-block;
+
+}

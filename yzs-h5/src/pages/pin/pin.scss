@@ -1,0 +1,123 @@
+@import "../../global.scss";
+
+.pin-container {
+  padding: 40px;
+  background-color: $black3_color;
+  min-height: 100%;
+  .pin-header{
+    @include flex-column-start-start;
+    .title{
+      margin-top: 105px;
+      height: 80px;
+      font-size: 56px;
+      font-weight: 600;
+      color: $white_color;
+      line-height: 80px;
+    }
+    .subtitle{
+      margin-top: 25px;
+      font-size: 28px;
+      font-weight: 400;
+      color: $white_color;
+      line-height: 42px;
+    }
+  }
+
+  .pin-input{
+    margin: 75px 0 0;
+    .pin{
+      ul{
+        &::after{
+          border: none !important;
+        }
+        li{
+          background-color: $black3_color;
+          &::after{
+            border: none !important;
+          }
+          i{
+            width: 32px !important;
+            height: 32px !important;
+            background-color: #8568D6 !important;
+          }
+          i[style*="hidden"]{
+            visibility: visible !important;
+            width: 32px !important;
+            height: 32px !important;
+            background-color: $gray5_color !important;
+          }
+        }
+      }
+    }
+  }
+
+  .pin-keyboard{
+    .rv-number-keyboard{
+      padding-top: 60px;
+      border-radius: 64px 64px 0 0;
+      background: #261845;
+      .rv-key__wrapper{
+        .rv-key{
+          background: #261845;
+          color: rgba($color: $gray5_color, $alpha: 1);
+          &.rv-key--active {
+            background: rgba($color: $black3_color, $alpha: 1);
+          }
+        }
+      }
+    }
+  }
+
+  .tips{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    color: $white_color;
+    line-height: 37px;
+  }
+
+  .pin-button {
+    @include flex-row-center-center;
+    margin: 100px auto 0;
+    width: 629px;
+    height: 104px;
+    background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+    box-shadow: inset 0px 0px 10px 4px rgba(173, 149, 255, 0.19);
+    border-radius: 58px 58px 58px 58px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 104px;
+    &::after,
+    &::before{
+      display: none;
+    }
+    &.disabled{
+      background: $gray5_color;
+      box-shadow: 0px 10px 35px 0px rgba($color: $gray5_color, $alpha: 0.25);
+    }
+  }
+
+  .taro-code-input{
+    margin-top: 10px;
+    background: #261845;
+    margin-left: 0;
+    padding: 16px 10px;
+    input{
+      color: #fff;
+      letter-spacing: 2px;
+    }
+  }
+  .at-modal-container{
+    .at-modal__container {
+      width: 302PX;
+      .at-modal__content {
+        padding: 0;
+        min-height: 50px;
+      }
+    }
+  }
+
+}

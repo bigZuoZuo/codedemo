@@ -1,0 +1,58 @@
+@import '../../global.scss';
+
+.c-pin-input-popup-view-popup-pin {
+  height: 790px;
+  background: #261845 !important;
+  border-radius: 64px 64px 0 0 !important;
+  .rv-number-keyboard {
+    box-shadow: none !important;
+  }
+  .rv-number-keyboard{
+    background: #261845;
+    .rv-key__wrapper{
+      .rv-key{
+        background: #261845;
+        color: rgba($color: $gray5_color, $alpha: 1);
+        &.rv-key--active {
+          background: rgba($color: $black3_color, $alpha: 1);
+        }
+      }
+    }
+  }
+  .pin-box {
+    margin-top: 90px;
+    width: 100vw;
+    background: #261845;
+    .title {
+      padding: 20px 0;
+      font-size: 28px;
+      color: $white_color;
+      font-weight: 600px;
+      text-align: center;
+    }
+    .pin {
+      ul {
+        &::after {
+          border: none !important;
+        }
+        li {
+          background: #261845;
+          &::after {
+            border: none !important;
+          }
+          i {
+            width: 32px !important;
+            height: 32px !important;
+            background-color: #8568D6 !important;
+          }
+          i[style*='hidden'] {
+            visibility: visible !important;
+            width: 32px !important;
+            height: 32px !important;
+            background-color: $gray5_color !important;
+          }
+        }
+      }
+    }
+  }
+}

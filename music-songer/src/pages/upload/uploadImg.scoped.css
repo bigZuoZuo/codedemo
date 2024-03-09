@@ -1,0 +1,23 @@
+/* 图片上传逻辑 */
+.upload-img {
+  position: relative;
+}
+
+.upload-img input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76PX;
+  height: 76PX;
+  opacity: 0;
+  z-index: 999;
+}
+
+.upload-img img {
+  width: 76PX;
+  height: 76PX;
+}
+
+.have-img {
+  border: 2PX solid #391d96;
+}

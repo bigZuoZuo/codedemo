@@ -1,0 +1,111 @@
+.shareStatus {
+    background: #1C1134;
+    color: #FFFFFF;
+    font-family: Abel-Regular, Abel;
+    font-weight: 400;
+
+    .statusTip {
+        // height: 394px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        padding: 124px 0 80px;
+
+
+
+        .tipImg {
+            display: block;
+            width: 171px;
+            height: 160px;
+            margin-bottom: 44px;
+        }
+
+        .tipTitle {
+            height: 36px;
+            line-height: 36px;
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .tipContent {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+    }
+
+    .title {
+        // height: 72px;
+        line-height: 72px;
+        font-size: 32px;
+        padding: 0 32px;
+        display: block;
+    }
+
+    .imgs {
+        padding-left: 32px;
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+
+        .img {
+            width: 176px;
+            height: 176px;
+            border-radius: 16px 16px 16px 16px;
+            margin-right: 20px;
+            img{
+                object-fit: cover;
+            }
+
+            &:last-child {
+                margin-right: 52px;
+            }
+        }
+
+    }
+
+    .contentText {
+        display: block;
+        font-size: 24px;
+        padding: 0 32px 200px;
+        word-break: break-all;
+    }
+
+    .brnBox {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 780px;
+        height: 174px;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0px -10px 60px 0px rgba(41, 39, 130, 0.1), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
+        border-radius: 48px 48px 0px 0px;
+        opacity: 1;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        filter: blur(undefinedpx);
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        background: #1C1134;
+
+        .btn {
+            display: block;
+            width: 346px;
+            height: 80px;
+            border-radius: 94px 94px 94px 94px;
+            opacity: 1;
+            font-size: 28px;
+            line-height: 80px;
+            text-align: center;
+            border: 2px solid #FFFFFF;
+        
+            &:last-child {
+                border: none;
+                background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+            }
+        }
+    }
+}

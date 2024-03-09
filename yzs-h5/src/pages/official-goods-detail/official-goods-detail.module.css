@@ -1,0 +1,305 @@
+.container {
+  background: #1b1135;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container::before {
+  /* content: " ";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 307px);
+  width: 614px;
+  height: 798px;
+  background: url("../../assets/v2/light.png") no-repeat center center; */
+
+  content: " ";
+  position: absolute;
+  width: 100vw;
+  height: 900px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgb(222 196 146 / 60%) 0%, rgb(171 162 139 / 0%) 100%);
+  opacity: 0.3;
+  filter: blur(1px);
+}
+
+.container::after {
+  content: " ";
+  position: absolute;
+  width: 50vw;
+  height: 300px;
+  top: 70px;
+  left: 25vw;
+  background: linear-gradient(180deg, rgb(255 232 188 / 50%) 0%, rgb(171 162 139 / 0%) 100%);
+  opacity: 0.5;
+  filter: blur(70px);
+}
+
+.scroll-view {
+  flex: 1;
+}
+
+.poster {
+  height: 522px;
+  width: 552px;
+  box-sizing: border-box;
+  padding: 16px;
+  display: block;
+  overflow: hidden;
+  margin: 100px auto 0;
+  background: rgb(255 255 255 / 11%);
+  border-radius: 60px;
+  opacity: 1;
+  border: 2px solid rgb(255 255 255 / 21%);
+  backdrop-filter: blur(15px);
+  position: relative;
+  z-index: 2;
+}
+
+.cover-img-box {
+  position: relative;
+  display: inline;
+}
+
+.cover-img-box::after {
+  content: attr(data-tab);
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: block;
+  height: 56px;
+  padding: 0 44px 0 42px;
+  background: linear-gradient(146deg, #684dc3 0%, #618bf6 100%);
+  border-radius: 0 44px;
+  opacity: 1;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 56px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+.pre-sale {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 144px;
+  height: 130px;
+}
+
+.pre-sale-text {
+  position: absolute;
+  top: 40px;
+  right: 46px;
+  transform: rotate(45deg);
+  font-size: 28px;
+  font-weight: 500;
+  color: #5b512e;
+}
+
+.wechat {
+  margin-top: 48px;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8%/10%;
+}
+
+.poster-image video {
+  border-radius: 8%/10%;
+}
+
+.cylinder {
+  width: 694px;
+  height: 268px;
+  margin: 30px auto 0;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  z-index: 2;
+  position: relative;
+  font-size: 36px;
+  font-family: "PingFang SC-Bold", "PingFang SC";
+  font-weight: bold;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 0 30px;
+  margin-top: -50px;
+}
+
+.series-tag {
+  background: #b56bff;
+}
+
+.box {
+  margin: 32px;
+  background: #1e153f;
+  background-blend-mode: overlay;
+  mix-blend-mode: normal;
+  border: 2px solid #291e50;
+  border-radius: 40px;
+  padding: 22px 0 12px;
+}
+
+.box-title-wrap {
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box-title-icon {
+  width: 6px;
+  height: 46px;
+  background: #b56bff;
+  box-shadow: 10px 0 24px 2px rgb(181 107 255 / 65%);
+  border-radius: 0 6px 6px 0;
+}
+
+.box-title {
+  padding-left: 22px;
+  font-size: 40px;
+  font-family: "PingFang SC-Bold", "PingFang SC";
+  font-weight: bold;
+  color: #fff;
+}
+
+.bod-body {
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.bod-body img {
+  display: block;
+  border-radius: 30px;
+}
+
+.list-item {
+  min-height: 72px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px 0;
+}
+
+.label {
+  font-size: 28px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: rgb(255 255 255 / 50%);
+}
+
+.value {
+  flex: 1;
+  overflow: hidden;
+  text-align: right;
+  font-size: 26px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff;
+  padding-left: 30px;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 176px;
+  background: rgb(0 0 0 / 30%);
+  border-radius: 100px 100px 0 0;
+  opacity: 1;
+  border: 2px solid rgb(255 255 255 / 12%);
+  overflow: hidden;
+  backdrop-filter: blur(80px);
+  z-index: 10;
+}
+
+.footer2 {
+  height: 290px;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 44px;
+  overflow: hidden;
+  height: 176px;
+}
+
+.footer-wrap2 {
+  height: 92px;
+}
+
+.footer-price-label {
+  height: 32px;
+  font-size: 24px;
+  font-family: DIN-Bold, DIN;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-price {
+  font-size: 48px;
+  font-family: DIN-Bold, DIN;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-btn {
+  height: 92px;
+  background: linear-gradient(81deg, #8568d6 0%, #401896 100%);
+  box-shadow: inset 0 0 20px 8px rgb(173 149 255 / 19%);
+  border-radius: 60px;
+  width: 320px;
+  font-size: 30px;
+  line-height: 92px;
+  overflow: hidden;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  color: #fff;
+}
+
+.footer-btn::after {
+  display: none;
+}
+
+.footer-btn:active {
+  color: #fff;
+}
+
+.footer-place {
+  min-height: 226px;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  margin-left: 32px;
+}
+
+.icon img {
+  border-radius: 0;
+}

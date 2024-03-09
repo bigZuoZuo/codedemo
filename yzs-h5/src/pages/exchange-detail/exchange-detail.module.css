@@ -1,0 +1,343 @@
+.container {
+  background: #1b1135;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-view {
+  flex: 1;
+}
+
+.scroll-view .exchange-name {
+  padding: 0 30px;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.scroll-view .exchange-tips {
+  padding: 0 30px;
+  margin-left: 20px;
+  color: #8568d6;
+  font-size: 28px;
+}
+
+.scroll-view .exchange-content-container {
+  padding: 0 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #1e153f;
+  border-radius: 42px;
+  opacity: 1;
+  border: 2px solid #291e50;
+  height: 86px;
+}
+
+.scroll-view .at-form::after,
+.scroll-view .at-input::after {
+  display: none;
+}
+
+.scroll-view .at-form,
+.scroll-view .at-input {
+  padding: 10px 0;
+  background: transparent;
+}
+
+.scroll-view .at-form label,
+.scroll-view .at-input label {
+  color: #635a78;
+}
+
+.scroll-view .at-form input,
+.scroll-view .at-input input {
+  color: #fff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.scroll-view .at-input {
+  margin-left: 0;
+}
+
+.scroll-view .at-input label {
+  padding-left: 40px;
+}
+
+.scroll-view .at-input input {
+  padding-left: 30px;
+}
+
+.poster {
+  height: 522px;
+  width: 552px;
+  box-sizing: border-box;
+  padding: 16px;
+  display: block;
+  overflow: hidden;
+  margin: 28px auto 0;
+  background: rgb(255 255 255 / 11%);
+  border-radius: 60px;
+  opacity: 1;
+  border: 2px solid rgb(255 255 255 / 21%);
+  backdrop-filter: blur(15px);
+  position: relative;
+  z-index: 2;
+}
+
+.wechat {
+  margin-top: 48px;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  border-radius: 44px;
+}
+
+.cylinder {
+  width: 694px;
+  height: 268px;
+  margin: -60px auto 0;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  z-index: 2;
+  position: relative;
+  font-size: 36px;
+  font-family: "PingFang SC-Bold", "PingFang SC";
+  font-weight: bold;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 0 30px;
+  margin-top: -50px;
+}
+
+.goods-mate-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.limited-quantity {
+  font-size: 24px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #ffdaa4;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  background: #675437;
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+}
+
+.limited-quantity-number {
+  height: 44px;
+  line-height: 44px;
+  background: #ddcb8a;
+  border-radius: 0 4px 4px 0;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #402e13;
+}
+
+.series-name {
+  height: 44px;
+  line-height: 44px;
+  padding: 5px 10px;
+  text-align: center;
+  background: #684dc3;
+  border-radius: 4px;
+  font-size: 24px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fefeff;
+  margin-left: 18px;
+}
+
+.box {
+  margin: 32px;
+  background: #1e153f;
+  background-blend-mode: overlay;
+  mix-blend-mode: normal;
+  border: 2px solid #291e50;
+  border-radius: 40px;
+  padding: 22px 0 12px;
+}
+
+.box-title-wrap {
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box-title-icon {
+  width: 6px;
+  height: 46px;
+  background: #b56bff;
+  box-shadow: 10px 0 24px 2px rgb(181 107 255 / 65%);
+  border-radius: 0 6px 6px 0;
+}
+
+.box-title {
+  padding-left: 22px;
+  font-size: 40px;
+  font-family: "PingFang SC-Bold", "PingFang SC";
+  font-weight: bold;
+  color: #fff;
+}
+
+.bod-body {
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.bod-body img {
+  display: block;
+  border-radius: 30px;
+}
+
+.list-item {
+  min-height: 72px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px 0;
+}
+
+.label {
+  font-size: 28px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: rgb(255 255 255 / 50%);
+}
+
+.value {
+  flex: 1;
+  overflow: hidden;
+  text-align: right;
+  font-size: 28px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff;
+  padding-left: 30px;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 176px;
+  background: rgb(0 0 0 / 30%);
+  border-radius: 100px 100px 0 0;
+  opacity: 1;
+  border: 2px solid rgb(255 255 255 / 12%);
+  overflow: hidden;
+  backdrop-filter: blur(80px);
+  z-index: 10;
+}
+
+.footer2 {
+  height: 290px;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 44px;
+  overflow: hidden;
+  height: 176px;
+}
+
+.footer-wrap2 {
+  height: 92px;
+}
+
+.footer-price-label {
+  height: 32px;
+  font-size: 24px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-price {
+  font-size: 48px;
+  font-family: DIN-Bold, DIN;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-btn {
+  height: 92px;
+  background: linear-gradient(81deg, #8568d6 0%, #401896 100%);
+  box-shadow: inset 0 0 20px 8px rgb(173 149 255 / 19%);
+  border-radius: 60px;
+  width: 290px;
+  font-size: 36px;
+  overflow: hidden;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  color: #fff;
+}
+
+.footer-btn::after {
+  display: none;
+}
+
+.footer-btn:active {
+  color: #fff;
+}
+
+.footer-place {
+  min-height: 226px;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  margin-left: 32px;
+}
+
+.icon img {
+  border-radius: 0;
+}
+
+.backHomeBtn {
+  margin: 35vh auto 0;
+  width: 629px;
+  height: 104px;
+  background: linear-gradient(81deg, #8568d6 0%, #401896 100%);
+  box-shadow: inset 0 0 10px 4px rgb(173 149 255 / 19%);
+  border-radius: 58px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 104px;
+}

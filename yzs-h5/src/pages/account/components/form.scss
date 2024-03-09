@@ -1,0 +1,101 @@
+.account-dialog {
+	&.close-none{
+		.layout-header__btn-close{
+			display: none;
+		}
+	}
+	.at-float-layout__container{
+		background: #1b1135;
+		.layout-header{
+			background: #1b1135;
+			.layout-header__title{
+				color: #fff;
+			}
+		}
+		.at-form{
+			background: #1b1135;
+			.at-input{
+				background: #1b1135;
+				.at-input__title{
+					color: rgba(255, 255, 255, 0.5);
+				}
+				input{
+					color: #fff;
+				}
+				border-bottom: 1px solid #291e50;
+				&.at-input--without-border{
+					border-bottom: none;
+				}
+				&::after{
+					display: none;
+				}
+			}
+			.at-input__children::after{
+				display: none;
+			}
+		}
+	}
+	.layout-body__content {
+		display: flex;
+		flex-direction: column;
+	}
+	.account-dialog-body {
+		flex: 1;
+		overflow: hidden;
+		&::after{
+			display: none;
+		}
+		.at-input {
+			margin: 0 32px;
+
+			input {
+				font-size: 28px;
+			}
+		}
+
+		.at-input__title {
+			font-size: 28px;
+		}
+	}
+
+
+  .account-input {
+    height: 84px;
+    line-height: 84px;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+	border-bottom: 1px solid #291e50;
+
+  }
+
+  .account-input-tips {
+		margin-top: 10px;
+		display: inline-block;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+
+	.account-dialog-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.btn[plain][size=mini]{
+			background: #1e153f;
+			background-blend-mode: overlay;
+			mix-blend-mode: normal;
+			border: 2px solid #291e50;
+			color: #fff;
+		}
+		.btn[type=primary][size=mini]{
+			color: #fff;
+			background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+		}
+	}
+
+	.account-dialog-btn {
+		width: 48%;
+	}
+}

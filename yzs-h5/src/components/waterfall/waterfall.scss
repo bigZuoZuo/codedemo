@@ -1,0 +1,22 @@
+.waterfall-container {
+  // padding: 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .item {
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* IE 10+ */
+    overflow: hidden;
+  }
+
+  .waterfall-item-gap {
+    margin-bottom: 24px;
+  }
+
+  .item:nth-child(2n) {
+    margin-right: 0;
+  }
+}

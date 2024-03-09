@@ -1,0 +1,19 @@
+.star {
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.star.right {
+  text-align: right;
+}
+
+.star img {
+  margin-left: 10px;
+  width: 30px;
+  height: 28px;
+}
+
+.star img:first-child {
+  margin-left: 0;
+}

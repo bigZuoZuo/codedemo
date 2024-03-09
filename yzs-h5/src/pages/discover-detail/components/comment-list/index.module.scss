@@ -1,0 +1,49 @@
+.commentList {
+  color: aliceblue;
+  padding: 0 32px;
+  margin-bottom: 300px;
+  .title {
+    height: 126px;
+    line-height: 126px;
+    font-size: 36px;
+    display: block;
+    position: relative;
+    .number {
+      font-size: 28px;
+      color: rgba(255, 255, 255, 0.65);
+      display: inline-block;
+      position: absolute;
+      top: -8px;
+      // left: 116px;
+      padding-left: 8px;
+    }
+  }
+  .sale_user_comment {
+    display: flex;
+    align-items: center;
+    height: 128px;
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 48px 48px 48px 48px;
+      opacity: 1;
+      border: 2px solid #ffffff;
+      margin-right: 16px;
+      img{
+        object-fit: cover;
+      }
+    }
+    .sale_comment_input {
+      flex: 1;
+      height: 64px;
+      line-height: 64px;
+      padding-left: 24px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 44px 44px 44px 44px;
+      font-size: 28px;
+      font-family: Abel-Regular, Abel;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

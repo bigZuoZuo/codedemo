@@ -1,0 +1,28 @@
+.pay-middle {
+  background: #fff;
+  min-height: 100vh;
+  // min-height: 100vh;
+  box-sizing: border-box;
+  padding: 35px;
+	.success-text{
+		margin-top: 170px;
+		font-size: 32px;
+		font-weight: 800;
+		color: #000;
+		line-height: 48px;
+		text-align: center;
+	}
+  .btn {
+    margin: 50px auto 0;
+    width: 309px;
+    height: 74px;
+    background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+    box-shadow: inset 0px 0px 10px 4px rgba(173, 149, 255, 0.19);
+    border-radius: 44px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 74px;
+  }
+}

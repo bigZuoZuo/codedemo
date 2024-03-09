@@ -1,0 +1,142 @@
+.container {
+  height: 100vh;
+  position: relative;
+  background: url("../../assets/v2/bg.png") no-repeat top left;
+  background-size: 100%;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.slogan {
+  position: relative;
+  z-index: 2;
+  padding-left: 60px;
+  padding-top: 10vh;
+}
+
+.logo-image {
+  width: 516px;
+  display: block;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.content-container {
+  padding: 8vh 60px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.label {
+  display: block;
+  font-size: 44px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 56px;
+  text-shadow: 0 20px 120px rgb(0 0 0 / 50%);
+  padding-bottom: 46px;
+}
+
+.input-wrap {
+  height: 112px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  opacity: 1;
+  border: 2px solid rgb(255 255 255 / 30%);
+}
+
+.area-code {
+  display: block;
+  width: 112px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  border-right: 2px solid rgb(255 255 255 / 40%);
+}
+
+.input-control {
+  display: block;
+  outline: none;
+  border: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  line-height: 54px;
+  font-family: DIN-Regular, DIN;
+  font-weight: 400;
+  color: #fff;
+  flex: 1;
+  overflow: hidden;
+}
+
+.input-control input {
+  margin: 0;
+  height: 54px;
+  line-height: 54px;
+  font-family: DIN-Regular, DIN;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  outline: none;
+  border: none;
+  background-color: none;
+}
+
+.input-control::after {
+  display: none;
+}
+
+.button {
+  margin: 102px 24px 0;
+  height: 101px;
+  text-align: center;
+  line-height: 101px;
+  font-size: 34px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  background: rgb(65 55 114 / 77.6%);
+  border-radius: 74px;
+  opacity: 1;
+  border: 3px solid rgb(71 86 203 / 41.2%);
+  padding: 0 80px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.shadow {
+  width: 518px;
+  height: 114px;
+  background: rgb(104 77 195 / 38%);
+  border-radius: 60px;
+  opacity: 1;
+  filter: blur(20px);
+  margin: -57px auto 0;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.captcha-label {
+  font-size: 34px !important;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff !important;
+}

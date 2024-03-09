@@ -1,0 +1,77 @@
+.user-space-container {
+  background: #fff;
+
+  .user-header {
+    height: 256px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+    display: block;
+    overflow: hidden;
+    margin-right: 24px;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    background: #000;
+  }
+
+  .tabbar-parent {
+    height: 132px;
+    overflow: hidden;
+  }
+
+  .tabbar-parent .weui-tabbar__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tabbar-parent .weui-tabbar__item > view {
+    order: 2;
+  }
+
+  .tabbar-parent .weui-tabbar__item .weui-tabbar__label {
+    order: 1;
+  }
+
+  .tabbar-sub {
+    justify-content: flex-start !important;
+    height: 80px !important;
+  }
+
+  .tabbar-sub .tabbar__item {
+    margin-right: 16px;
+  }
+
+  .tabbar-sub::before {
+    display: none !important;
+  }
+
+  .tabbar-container {
+    padding: 0 24px;
+  }
+  
+  .tabbar-parent {
+    border-top: 1PX solid rgba(0, 0, 0, 0.08);
+  }
+
+  .content-container {
+    padding: 0 24px;
+  }
+
+  .user-space-sub-tabs {
+    height: 56px;
+    justify-content: flex-start;
+
+    .tabbar__item-release-list {
+      margin-right: 24px;
+    }
+  }
+}

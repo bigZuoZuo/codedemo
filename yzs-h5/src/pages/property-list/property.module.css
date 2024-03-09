@@ -1,0 +1,246 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: #1b1135;
+}
+
+.tabbar {
+  position: relative;
+  z-index: 2;
+  display: block;
+  height: 250px;
+  overflow: initial;
+}
+
+.tabbar :global(.at-tabs__header) {
+  background: transparent;
+}
+
+.tabbar :global(.at-tabs__item) {
+  font-size: 34px;
+  font-family: "PingFang SC-Regular", "PingFang SC";
+  font-weight: 400;
+  color: rgb(255 255 255 / 30%);
+}
+
+.tabbar :global(.at-tabs__item--active) {
+  color: #9373ff;
+}
+
+.tabbar :global(.at-tabs__item-underline) {
+  width: 2.2em;
+  height: 6px;
+  border-radius: 6px 6px 0 0;
+  background: #9373ff;
+  margin: 0 auto;
+  left: calc(50% - 1.1em);
+  box-shadow: 0 0 34px 3px rgb(181 107 255 / 65%);
+}
+
+.tabbar :global(.at-tabs__underline) {
+  background: #352364;
+}
+
+.collection-wrap-detail {
+  height: calc(100% - 200px);
+  overflow: auto;
+  padding-bottom: 3vh;
+}
+
+.collection-body {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.collection-recommend-box {
+  margin-top: 28px;
+  padding: 20px;
+  background: #1e153f;
+  background-blend-mode: overlay;
+  mix-blend-mode: normal;
+  border: 2px solid #291e50;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+}
+
+.pre-sale {
+  position: absolute;
+  top: 62px;
+  right: 60px;
+  width: 144px;
+  height: 130px;
+}
+
+.pre-sale-text {
+  position: absolute;
+  top: 92px;
+  right: 86px;
+  transform: rotate(45deg);
+  font-size: 28px;
+  font-weight: 500;
+  color: #5b512e;
+}
+
+.recommend-image {
+  position: relative;
+  width: 290px !important;
+  height: 274px !important;
+  border-radius: 16px;
+}
+
+.recommend-image img {
+  border-radius: 16px;
+}
+
+.recommend-image-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 290px;
+  height: 180px;
+  z-index: 99;
+}
+
+.recommend-image image {
+  display: block;
+  overflow: hidden;
+}
+
+.recommend-title {
+  font-size: 26px;
+  line-height: 66px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff;
+  min-height: 66px;
+  width: 90%;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recommend-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.recommend-tab {
+  display: flex;
+  flex-direction: row;
+  width: 290px;
+  flex-wrap: wrap;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tab-one {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #ffdaa4;
+  background: #675437;
+  border-radius: 4px 0 0 4px;
+}
+
+.tab-two {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #402e13;
+  background: #ddcb8a;
+  border-radius: 0 4px 4px 0;
+  margin-right: 10px;
+}
+
+.tab-three {
+  /* margin-top: 10px; */
+  padding: 5px 10px;
+  color: #fff;
+  background: #684dc3;
+  border-radius: 4px;
+}
+
+.recommend-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.publish-logo {
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%/50%;
+}
+
+.publish-logo img {
+  border-radius: 50%/50%;
+}
+
+.recommend-price {
+  font-size: 26px;
+  font-family: DIN-Regular, DIN;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  padding-top: 22px;
+}
+
+.recommend-number {
+  /* margin-top: 16px; */
+  padding: 0 16px;
+  background: linear-gradient(233deg, #9373ff 30%, #3b2a73 100%);
+  border-radius: 15px;
+  /* font-size: 12px; */
+  font-size: 26px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.unit {
+  font-size: 24px;
+  font-family: DIN-Bold, DIN;
+  font-weight: bold;
+}
+
+.d3 {
+  position: absolute;
+  background: url("../../assets/icons/3d.png") no-repeat center center rgb(0 0 0 / 50%);
+  background-size: 60px;
+  width: 80px;
+  height: 80px;
+  top: 52%;
+  left: 39%;
+  border-radius: 50%;
+}
+
+.locking {
+  position: absolute;
+  background: url("../../assets/locking.png") no-repeat center center;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  top: 15%;
+  right: 9%;
+}
+
+.d3.video-icon {
+  background: url("../../assets/icons/video.png") no-repeat center center rgb(0 0 0 / 0%);
+  background-size: 60px;
+}

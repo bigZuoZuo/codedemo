@@ -1,0 +1,58 @@
+.cardBox{
+  .card {
+    width: 302px;
+    height: 285px;
+    margin: 200px auto 0;
+    // background-image: url("../../../../assets/marketing/image-bg.png");
+    // background-size: cover;
+    background: #7d60c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 12px 22px;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .level{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 0;
+    z-index: 3;
+    top: -80px;
+    left: 88px;
+  }
+
+  .image {
+    margin-top: 10px;
+    display: block;
+    width: 280px;
+    height: 265px;
+    border-radius: 8px;
+    // box-shadow: 0 0 40px rgb(245, 180, 0);
+    img{
+      border-radius: 8px;
+    }
+  }
+
+  .mask{
+    width: 300px;
+    height: 284px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 2;
+  }
+
+  .name {
+    margin-top: 68px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}

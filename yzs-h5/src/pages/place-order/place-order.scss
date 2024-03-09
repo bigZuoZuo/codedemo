@@ -1,0 +1,300 @@
+.place-order-container {
+  background: #1b1135;
+  padding: 50px 40px 100px;
+  .place-order-nav{
+    padding-top: 0px;
+  }
+
+  // margin-top: 80px;
+  .goods-detail-container {
+    padding: 39px 32px;
+    // margin-top: 50px;
+    background: #1e153f;
+    background-blend-mode: overlay;
+    mix-blend-mode: normal;
+    border: 2px solid #291e50;
+    box-sizing: border-box;
+    border-radius: 40px;
+    .goods-detail-body {
+      position: relative;
+      height: 223px;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .goods-image {
+      width: 236px;
+      height: 223px;
+      overflow: hidden;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .goods-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1;
+      overflow: hidden;
+      padding-left: 32px;
+    }
+
+    .goods-info-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .goods-info-tips {
+      margin-top: 14px;
+      display: block;
+      width: 162px;
+      height: 41px;
+      line-height: 41px;
+      font-size: 24px;
+      background: #7f39b7;
+      text-align: center;
+      color: #fff;
+    }
+    .goods-title {
+      line-height: 60px;
+      // margin-bottom: 100px;
+      font-weight: bold;
+      color: #fff;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .goods-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      line-height: 44px;
+      .cl-stepper__input{
+        background: transparent;
+        color: #9373FF;
+      }
+      .cl-stepper__plus,
+      .cl-stepper__minus{
+        // width: 24px;
+        // height: 25px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 6px 6px 6px 6px;
+        opacity: 1;
+        border: 2px solid #291e50;
+      }
+    }
+  }
+
+  .goods-info-card {
+    margin-top: 32px;
+
+    .goods-info-body {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 240px;
+      box-sizing: border-box;
+      background: #1e153f;
+      background-blend-mode: overlay;
+      mix-blend-mode: normal;
+      border: 2px solid #291e50;
+      box-sizing: border-box;
+      border-radius: 40px;
+      &.pay{
+        margin-top: 32px;
+        height: 320px;
+      }
+    }
+
+    .goods-info-item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      overflow: hidden;
+      &.final{
+        .goods-info-value{
+          color: #9373FF;
+        }
+      }
+    }
+
+    .goods-info-label {
+      font-size: 28px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.5);
+      &.time{
+        font-weight: lighter;
+      }
+    }
+
+    .goods-info-value {
+      text-align: right;
+      font-size: 28px;
+      font-weight: bold;
+      font-family: 'D-DIN-Bold';
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex: 1;
+      color: #fff;
+      &.pay{
+        color: #9373FF;
+      }
+      &.no{
+        padding-left: 10%;
+        font-family: 'DIN-Regular';
+      }
+    }
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 156px;
+    background: rgb(0 0 0 / 30%);
+    border-radius: 100px 100px 0 0;
+    opacity: 1;
+    border: 2px solid rgb(255 255 255 / 12%);
+    overflow: hidden;
+    backdrop-filter: blur(80px);
+    z-index: 10;
+    .footer-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 44px;
+      overflow: hidden;
+      height: 156px;
+
+      .footer-price-label {
+        height: 32px;
+        font-size: 28px;
+        font-family: DIN-Bold, DIN;
+        font-weight: bold;
+        color: #fff;
+        &.mob{
+          font-size: 40px;
+          line-height: 44px;
+        }
+      }
+
+      .footer-price {
+        font-size: 44px;
+        font-family: DIN-Bold, DIN;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .footer-btn {
+        height: 86px;
+        background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+        box-shadow: inset 0 0 20px 8px rgb(173 149 255 / 19%);
+        border-radius: 46px;
+        width: 256px;
+        font-size: 32px;
+        overflow: hidden;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+        color: #fff;
+      }
+
+      .footer-btn::after {
+        display: none;
+      }
+
+      .footer-btn:active {
+        color: #fff;
+      }
+
+      .footer-place {
+        min-height: 226px;
+      }
+
+      .icon {
+        height: 32px;
+        width: 32px;
+        margin-left: 32px;
+      }
+
+      .icon img {
+        border-radius: 0;
+      }
+    }
+  }
+
+  .d3{
+    position: absolute;
+    background: url("../../assets/icons/3d.png") no-repeat center center rgba(0, 0, 0, 0.5);
+    background-size: 40px;
+    width: 60px;
+    height: 60px;
+    top: 35%;
+    left: 14%;
+    border-radius: 50%;
+    &.video-icon{
+      background: url("../../assets/icons/video.png") no-repeat center center rgba(0, 0, 0, 0);
+      background-size: 40px;
+    }
+  }
+
+  .unselected-address-container,.address-info{
+    padding: 10px 32px;
+    margin-bottom: 50px;
+    background: #1e153f;
+    background-blend-mode: overlay;
+    mix-blend-mode: normal;
+    border: 2px solid #291e50;
+    box-sizing: border-box;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    &.address-info{
+      padding: 32px;
+    }
+    .receive-address-info{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      .receive-address-info-wang{
+        display: flex;
+      }
+      .receive-address-info-detail{
+        margin-top: 10px;
+      }
+    }
+    .unselected-address-label{
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+    }
+    .arrow{
+      margin-left: auto;
+      width: 42px;
+      height: 42px;
+      vertical-align: -10px;
+    }
+    .icon{
+      width: 96px;
+      height: 90px;
+      margin-right: 30px;
+    }
+  }
+}

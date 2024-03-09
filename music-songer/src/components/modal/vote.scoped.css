@@ -1,0 +1,161 @@
+@import url(./common.css);
+
+.vote-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 670px;
+  height: 982px;
+  background: #1F0056;
+  border-radius: 80px 80px 20px 20px;
+  border: 6px solid #7AF3FF;
+  margin: 210px 0 0 0;
+}
+
+.vote-modal span[data-title] {
+  position: absolute;
+  left: 50%;
+  background-size: cover;
+  transform: translateX(-50%);
+  top: -310px;
+  width: 750px;
+  height: 560px;
+  background: url(./../../assets/model-bg.png) no-repeat center center/100% 100%;
+  z-index: -1;
+}
+
+.vote-modal .new-title{
+  font-size: 32px;
+  font-family: 'fangyuehe';
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.vote-modal .new-title::before{
+  background: url(./../../assets/sea.png) no-repeat center center/100% 100%;
+  width: 226px;
+  height: 94px;
+  content: '';
+}
+
+.vote-modal .new-title::after{
+  background: url(./../../assets/sea.png) no-repeat center center/100% 100%;
+  width: 226px;
+  height: 94px;
+  content: '';
+}
+
+.vote-modal .vote-info {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 516px;
+  height: 66px;
+  background: #2b1a63;
+  border-radius: 34px;
+  border: 2px solid #4c10c0;
+  font-size: 28px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 66px;
+  text-align: center;
+}
+
+.vote-modal .vote-info-name {
+  margin: 0 10px;
+  max-width: 360px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.vote-modal .vote-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vote-modal .vote-item {
+  margin-left: 16px;
+  margin-bottom: 20px;
+  width: 166px;
+  height: 102px;
+  background: linear-gradient(180deg, #af92ff 0%, #4d57bb 100%);
+  border-radius: 10px;
+  border: 2px solid #c1faff;
+  font-size: 32px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #ffffff;
+  line-height: 102px;
+  text-align: center;
+}
+
+.vote-modal .vote-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.vote-modal .vote-item.active {
+  background: linear-gradient(180deg, #ffd35e 0%, #fb995d 100%);
+  border-color: #fffd9a;
+}
+
+.vote-modal .vote-amount {
+  margin-top: 20px;
+  font-size: 28px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #ffffff;
+  line-height: 44px;
+  text-align: center;
+}
+
+.vote-modal .btn-vote-sure {
+  margin-top: 20px;
+  margin-bottom: -30px;
+  width: 394px;
+  height: 114px;
+  background: url(./images/vote-sure.png) no-repeat center center;
+  background-size: cover;
+}
+
+.vote-modal .charge-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 32px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #ffffff;
+  line-height: 44px;
+}
+
+.vote-modal .charge-info span[data-diamond] {
+  width: 100px;
+  height: 94px;
+  background: url(../../assets/images/img-diamond.png) no-repeat center center;
+  background-size: cover;
+}
+
+.vote-modal .charge-info-link {
+  margin-left: auto;
+  margin-right: 60px;
+  font-size: 32px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #8efff9;
+}

@@ -1,0 +1,114 @@
+.item {
+  width: 192px;
+  margin-right: 22px;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+  &.item2{
+    .fade{
+      position: absolute !important;
+      top: 0px !important;
+      left: 20px !important;
+    }
+  }
+}
+
+.image {
+  width: 192px !important;
+  height: 182px !important;
+  display: block;
+  z-index: 100;
+}
+@keyframes fadeInUpBig {
+  0% {
+     opacity: 1;
+     transform: translate(0, 0);
+     transform-origin: 0%;
+  }
+  75% {
+     opacity: 0.75;
+     transform: translate(200px, -1000px);
+     box-shadow: 0 0px 30px #e3bf1d;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(200px, -1000px);
+    box-shadow: 0 0px 90px #e3bf1d;
+ }
+}
+.fade{
+  animation: fadeInUpBig 1s linear 1;
+  &.fade_2{
+    position: absolute !important;
+    top: 0px !important;
+    left: -406px !important;
+    z-index:999!important;
+    transition: all 1s ease-in;
+  }
+  &.fade_1{
+    position: absolute !important;
+    top: 0px !important;
+    left: -203px !important;
+    z-index:999!important;
+    transition: all 1s ease-in;
+  }
+  &.fade_0{
+    position: absolute !important;
+    top: 0px !important;
+    left: 10px !important;
+    z-index:999!important;
+    transition: all 1s ease-in;
+  }
+}
+
+.mask{
+  width: 192px;
+  height: 182px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background: rgba($color: #000, $alpha: 0.6);
+}
+
+.mask1{
+  width: 192px;
+  height: 182px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: 999;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 16px 0;
+  color: rgba($color: #FFFFFF, $alpha: 0.6);
+  &.all{
+    color: #fff;
+  }
+}
+
+.status {
+  width: 128px;
+  background: #6f28a7;
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'DIN-Regular';
+  line-height: 48px;
+  border-radius: 6px;
+  text-align: center;
+  background: rgba($color: #FFFFFF, $alpha: 0.6);
+  &.all{
+    background: #6f28a7;
+  }
+}

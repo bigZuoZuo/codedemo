@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+img {
+  width: 60%;
+  margin-bottom: 60px;
+}
+
+span {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+p {
+  text-align: center;
+  padding: 0 60px;
+  color: #aaa;
+  width: 80%;
+}
+

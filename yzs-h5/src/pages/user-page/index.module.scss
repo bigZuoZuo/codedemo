@@ -1,0 +1,46 @@
+.user_page {
+  color: #ffffff;
+  background-color: #1c1436;
+
+  .user_info {
+    height: 212px;
+    display: flex;
+    padding: 38px 48px 52px;
+    box-sizing: border-box;
+
+    .avatar {
+      width: 124px;
+      height: 124px;
+      box-shadow: 0px 12px 16px 0px #6823ac;
+      opacity: 1;
+      border: 6px solid #ffffff;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin-right: 46px;
+      background-color: #ffffff;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .info {
+      font-size: 24px;
+      font-family: Abel-Regular, Abel;
+      font-weight: 400;
+      color: #ffffff;
+      flex: 1;
+      .nickname,
+      .phone {
+        display: block;
+      }
+      .nickname {
+        font-size: 40px;
+        margin: 12px 0 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 400px;
+      }
+    }
+  }
+}

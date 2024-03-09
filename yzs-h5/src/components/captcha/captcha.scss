@@ -1,0 +1,30 @@
+.captcha-container {
+  .at-modal__container {
+    width: 302PX;
+    .at-modal__content {
+      padding: 0;
+      min-height: 50px;
+    }
+  }
+
+  div {
+    // box-sizing: border-box;
+    display: block;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5); ;
+    font-size: inherit;
+    text-align: inherit;
+  }
+
+  .captcha-timing {
+    // color: rgba(0, 0, 0, 0.35);
+    font-size: 28px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .captcha-timing-active {
+    color: #fff;
+  }
+}

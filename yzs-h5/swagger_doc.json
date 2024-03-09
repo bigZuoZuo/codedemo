@@ -1,0 +1,713 @@
+{
+  "openapi": "3.0.0",
+  "info": {"title": "project-4020174", "description": "Backend Project", "version": "1.0.0"},
+  "servers": [],
+  "paths": {
+    "/user/miniprogram/login": {
+      "post": {
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/gUserRegMiniprogramBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/searchIndex": {
+      "post": {
+        "summary": "search home index",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/gHomeSearchListIn"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/search": {
+      "post": {
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/gAuditByCondIn"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/comment": {
+      "post": {
+        "summary": "comment nft",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/CommentBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/comment/list": {
+      "post": {
+        "summary": "NFT comment list",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/CommentListBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/searchIndex/heat": {
+      "put": {"summary": "update nft heat", "responses": {"200": {"description": "success"}}}
+    },
+    "/user/miniprogram/hotSearch": {
+      "post": {
+        "summary": "hot search for home index",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/homeHotSearchListIn"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/share": {
+      "post": {
+        "summary": "user share NFT",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/homeShareCollect"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/collect": {
+      "post": {
+        "summary": "User collect NFT or Audit, if auditId is not empty, collect audit.",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/homeCollectUserIn"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/fuzzySearch": {
+      "post": {
+        "summary": "fuzzySearch  for heatInc",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/homeSearchHeatFSIn"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/clickSearch": {
+      "post": {"summary": "clickSearch for heatInc", "responses": {"200": {"description": "success"}}}
+    },
+    "/user/miniprogram/nft/publish": {
+      "post": {
+        "summary": "user miniProgram publish/republish NFT",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/userPublishNFC"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nft/publish": {
+      "post": {
+        "summary": "my publish NFT",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/mePublishNFTBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nft/buyer": {
+      "post": {
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/meBuyOrSellerNFTBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nft/seller": {
+      "post": {
+        "summary": "my seller NFT",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/meBuyOrSellerNFTBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nfc/{id}": {
+      "get": {
+        "summary": "NFC detail",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nfc/collect": {
+      "post": {
+        "summary": "user' collect NFC",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/meUserColletBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/address": {
+      "post": {
+        "summary": "user add address",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/gUserAddressBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      },
+      "get": {"responses": {"200": {"description": "success"}}}
+    },
+    "/user/miniprogram/address/{id}": {
+      "put": {
+        "summary": "user update address ",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/gUserAddressUpdateBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      },
+      "delete": {
+        "summary": "user delete address",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      },
+      "get": {
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/collect/cancel": {
+      "post": {
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/homeCancelCollectUserIn"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/collect/{id}": {
+      "get": {
+        "summary": "find the NFC whether user collect it or  not s.homeCollectUserIn",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/order/pmarket": {
+      "post": {
+        "summary": "Primary market , user create order in searchIndex(Transactions between users and platforms )",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/orderCreateBodyPM"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/order/smarket": {
+      "post": {
+        "summary": "Secondary market , user create order in searchIndex(Transactions between users and platforms )",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/orderCreateBodySM"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/trackNumber": {
+      "post": {
+        "summary": "seller/platform input the order trackNumber",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/gOrderTNBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/completed": {
+      "post": {
+        "summary": "confirm ",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/orderId"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/payment": {
+      "post": {
+        "summary": "prepaid payment",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/apiPaymentBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/payment/fake": {
+      "post": {
+        "summary": "payment fake",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/apiPaymentBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/payment/notify/fake": {
+      "post": {
+        "summary": "miniProgram payment  successful Wechat notify",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/gOrderPaymentFakeBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/payment/notify": {
+      "post": {
+        "summary": "refer https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=9_7&index=8",
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/order": {
+      "post": {
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/gOrderByCondIn"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/delete": {
+      "post": {
+        "summary": "batch remove order",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/orderIds"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/cancel": {
+      "post": {
+        "summary": "cancel the order",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/orderId"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/address": {
+      "put": {
+        "summary": "update the order address",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/orderIdAddressRel"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/phonenumber": {
+      "post": {
+        "summary": "miniProgram get user phoneNumber",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/gUserRegMiniprogramBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nfc": {
+      "post": {
+        "summary": "user' NFC list",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/baseBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/order/{id}": {
+      "get": {
+        "summary": "user  order detail",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/usera/user/miniprogram/me/nft": {
+      "post": {
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/baseBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/upload/authorize/apply": {"get": {"responses": {"200": {"description": "success"}}}},
+    "/upload/images": {
+      "post": {
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/gUploadImagesBody"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/reply": {
+      "post": {
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/ReplyBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/publish/status": {
+      "post": {
+        "summary": "query the NFC can publish",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/userPublishNFCStatus"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nft/buyer/{id}": {
+      "get": {
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/reply/list": {
+      "post": {
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/ReplyListBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nft/seller/{id}": {
+      "get": {
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nft/publish/{id}": {
+      "get": {
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/banner": {"get": {"responses": {"200": {"description": "success"}}}},
+    "/activity/{id}": {
+      "get": {
+        "summary": "query active by active id",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/nfc/sku/{id}": {
+      "get": {
+        "summary": "query NFC sku",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/publish/created": {
+      "post": {
+        "summary": "user publish audit created",
+        "requestBody": {
+          "content": {"application/json": {"schema": {"$ref": "#/components/schemas/userPublishNFCCreated"}}}
+        },
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/nft/publish/cancel": {
+      "post": {
+        "summary": "cancel the publish NFC",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/idSchema"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/detail/{id}": {
+      "get": {
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/test": {"get": {"responses": {"200": {"description": "success"}}}},
+    "/user/miniprogram/nft/comment/read/{id}": {
+      "put": {
+        "summary": "set nft comment to is read status",
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/stat": {
+      "get": {"summary": "get login user's stat data", "responses": {"200": {"description": "success"}}}
+    },
+    "/user/miniprogram/collect/audit/{id}": {
+      "get": {
+        "parameters": [{"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/me/nfc/share": {
+      "post": {
+        "summary": "user' share NFC",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/meUserShareBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    },
+    "/user/miniprogram/audit/user/publish": {
+      "post": {
+        "summary": "user passed audit list",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/AuditNftListBody"}}}},
+        "responses": {"200": {"description": "success"}}
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "gUserRegMiniprogramBody": {
+        "type": "object",
+        "properties": {
+          "code": {"type": "string", "minLength": 1, "maxLength": 64},
+          "userInfo": {
+            "type": "object",
+            "properties": {
+              "avatar": {"type": "string", "minLength": 0, "maxLength": 200},
+              "nickName": {"type": "string"}
+            }
+          }
+        },
+        "required": ["code"]
+      },
+      "gHomeSearchListIn": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "title": {"type": "string", "minLength": 0, "maxLength": 48},
+          "sortBy": {"default": "created_at", "enum": ["created_at", "price", "heat"], "type": "string"},
+          "sort": {"default": -1, "enum": [1, -1], "type": "integer", "format": "int32"}
+        },
+        "required": ["limit", "skip", "sortBy", "sort"]
+      },
+      "gAuditByCondIn": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "title": {"type": "string", "minLength": 1, "maxLength": 32768},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"}
+        }
+      },
+      "CommentBody": {
+        "type": "object",
+        "properties": {"auditId": {"type": "string"}, "content": {"type": "string"}},
+        "required": ["auditId", "content"]
+      },
+      "CommentListBody": {
+        "type": "object",
+        "properties": {
+          "auditId": {"type": "string"},
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "title": {"type": "string", "minLength": 0, "maxLength": 48},
+          "sortBy": {"default": "created_at", "enum": ["created_at", "price", "heat"], "type": "string"},
+          "sort": {"default": -1, "enum": [1, -1], "type": "integer", "format": "int32"}
+        },
+        "required": ["auditId", "limit", "skip", "sortBy", "sort"]
+      },
+      "homeHotSearchListIn": {
+        "type": "object",
+        "properties": {"limit": {"default": 5, "type": "integer", "format": "int32", "minimum": 1, "maximum": 20}},
+        "required": ["limit"]
+      },
+      "homeShareCollect": {
+        "type": "object",
+        "properties": {"nftId": {"type": "string"}, "userId": {"type": "string"}},
+        "required": ["nftId"]
+      },
+      "homeCollectUserIn": {
+        "type": "object",
+        "properties": {"nftId": {"type": "string"}, "auditId": {"type": "string"}, "userId": {"type": "string"}}
+      },
+      "homeSearchHeatFSIn": {"type": "object", "properties": {"nftId": {"type": "string"}}, "required": ["nftId"]},
+      "userPublishNFC": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "content": {"type": "string"},
+          "price": {"default": "0", "type": "string"},
+          "link": {"type": "string"}
+        },
+        "required": ["id"]
+      },
+      "mePublishNFTBody": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"},
+          "title": {"type": "string"},
+          "state": {
+            "default": "created",
+            "enum": ["created", "pending", "passed", "failed", "offsell", "canceled"],
+            "type": "string"
+          }
+        }
+      },
+      "meBuyOrSellerNFTBody": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "title": {"type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"}
+        }
+      },
+      "meUserColletBody": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"}
+        }
+      },
+      "gUserAddressBody": {
+        "type": "object",
+        "properties": {
+          "province": {"type": "string", "minLength": 0, "maxLength": 128},
+          "city": {"type": "string", "minLength": 0, "maxLength": 128},
+          "area": {"type": "string", "minLength": 0, "maxLength": 128},
+          "street": {"type": "string", "minLength": 0, "maxLength": 128},
+          "address": {"type": "string", "minLength": 0, "maxLength": 128},
+          "mobile": {"type": "string", "minLength": 1, "maxLength": 64},
+          "contactName": {"type": "string", "minLength": 1, "maxLength": 64}
+        },
+        "required": ["mobile", "contactName"]
+      },
+      "gUserAddressUpdateBody": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "province": {"type": "string", "minLength": 0, "maxLength": 128},
+          "city": {"type": "string", "minLength": 0, "maxLength": 128},
+          "area": {"type": "string", "minLength": 0, "maxLength": 128},
+          "street": {"type": "string", "minLength": 0, "maxLength": 128},
+          "address": {"type": "string", "minLength": 0, "maxLength": 128},
+          "mobile": {"type": "string", "minLength": 1, "maxLength": 64},
+          "contactName": {"type": "string", "minLength": 1, "maxLength": 64},
+          "isDefault": {"type": "boolean"}
+        },
+        "required": ["id"]
+      },
+      "homeCancelCollectUserIn": {
+        "type": "object",
+        "properties": {"nftId": {"type": "string"}, "auditId": {"type": "string"}}
+      },
+      "orderCreateBodyPM": {
+        "type": "object",
+        "properties": {
+          "buyerId": {"type": "string"},
+          "buyerName": {"type": "string"},
+          "nftId": {"type": "string"},
+          "price": {"default": "0", "type": "string"},
+          "address": {"default": "", "type": "string"},
+          "contactName": {"default": "", "type": "string"},
+          "contactMobile": {"type": "string"},
+          "type": {"default": "platform", "enum": ["platform", "user"], "type": "string"},
+          "skuInfo": {"type": "string"},
+          "amount": {"default": 1, "type": "integer", "format": "int32"}
+        },
+        "required": ["buyerId", "buyerName", "nftId", "price", "contactMobile", "type", "amount"]
+      },
+      "orderCreateBodySM": {
+        "type": "object",
+        "properties": {
+          "sellerId": {"type": "string"},
+          "sellerName": {"type": "string"},
+          "buyerId": {"type": "string"},
+          "buyerName": {"type": "string"},
+          "nftId": {"type": "string"},
+          "price": {"default": "0", "type": "string"},
+          "address": {"default": "", "type": "string"},
+          "contactName": {"default": "", "type": "string"},
+          "contactMobile": {"type": "string"}
+        },
+        "required": ["sellerId", "sellerName", "buyerId", "buyerName", "nftId", "price", "contactMobile"]
+      },
+      "gOrderTNBody": {
+        "type": "object",
+        "properties": {"orderId": {"type": "string"}, "trackNumber": {"type": "string"}},
+        "required": ["orderId", "trackNumber"]
+      },
+      "orderId": {"type": "object", "properties": {"orderId": {"type": "string"}}, "required": ["orderId"]},
+      "apiPaymentBody": {
+        "type": "object",
+        "properties": {"outTradeNo": {"type": "string"}, "orderId": {"type": "string"}},
+        "required": ["outTradeNo", "orderId"]
+      },
+      "gOrderPaymentFakeBody": {
+        "type": "object",
+        "properties": {
+          "eventType": {"default": "TRANSACTION.SUCCESS", "type": "string"},
+          "outTradeNo": {"type": "string"}
+        },
+        "required": ["eventType", "outTradeNo"]
+      },
+      "gOrderByCondIn": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"},
+          "state": {"enum": ["pending", "shipped", "received", "completed", "canceled"], "type": "string"},
+          "buyerId": {"type": "string"}
+        }
+      },
+      "orderIds": {
+        "type": "object",
+        "properties": {
+          "orderIds": {"type": "array", "items": {"type": "string"}},
+          "paymentStatus": {"enum": ["success", "fail"], "type": "string"}
+        },
+        "required": ["orderIds"]
+      },
+      "orderIdAddressRel": {
+        "type": "object",
+        "properties": {
+          "orderId": {"type": "string"},
+          "address": {"type": "string"},
+          "contactName": {"type": "string"},
+          "contactMobile": {"type": "string"}
+        },
+        "required": ["orderId", "address"]
+      },
+      "baseBody": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"}
+        }
+      },
+      "gUploadImagesBody": {
+        "type": "object",
+        "properties": {"uploadURL": {"type": "array", "items": {"type": "string"}}},
+        "required": ["uploadURL"]
+      },
+      "ReplyBody": {
+        "type": "object",
+        "properties": {
+          "auditId": {"type": "string"},
+          "content": {"type": "string"},
+          "commentId": {"type": "string"},
+          "repliedId": {"type": "string"},
+          "repliedNickName": {"type": "string"}
+        },
+        "required": ["auditId", "content", "commentId", "repliedId", "repliedNickName"]
+      },
+      "userPublishNFCStatus": {
+        "type": "object",
+        "properties": {"nftId": {"type": "string"}, "nftNumber": {"type": "string"}},
+        "required": ["nftNumber"]
+      },
+      "ReplyListBody": {
+        "type": "object",
+        "properties": {
+          "auditId": {"type": "string"},
+          "commentId": {"type": "string"},
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"default": "created_at", "enum": ["created_at", "price", "heat"], "type": "string"},
+          "sort": {"default": -1, "enum": [1, -1], "type": "integer", "format": "int32"}
+        },
+        "required": ["auditId", "commentId", "limit", "skip", "sortBy", "sort"]
+      },
+      "userPublishNFCCreated": {
+        "type": "object",
+        "properties": {
+          "userId": {"type": "string"},
+          "nftId": {"type": "string"},
+          "userName": {"type": "string"},
+          "nftNumber": {"type": "string"},
+          "skuId": {"type": "string"},
+          "title": {"type": "string"},
+          "content": {"type": "string"},
+          "images": {"type": "array", "maxItems": 9, "items": {"type": "string", "minLength": 1, "maxLength": 2048}},
+          "price": {"default": "0", "type": "string"},
+          "link": {"type": "string"},
+          "avatar": {"type": "string"}
+        },
+        "required": ["userName", "nftNumber", "title", "content", "images", "link"]
+      },
+      "idSchema": {"type": "object", "properties": {"id": {"type": "string"}}, "required": ["id"]},
+      "meUserShareBody": {
+        "type": "object",
+        "properties": {
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"enum": ["created_at"], "type": "string"},
+          "sort": {"enum": [1, -1], "type": "integer", "format": "int32"}
+        }
+      },
+      "AuditNftListBody": {
+        "type": "object",
+        "properties": {
+          "userId": {"type": "string"},
+          "limit": {"default": 10, "type": "integer", "format": "int32", "minimum": 1, "maximum": 500},
+          "skip": {"default": 0, "type": "integer", "format": "int32", "minimum": 0, "maximum": 500},
+          "sortBy": {"default": "created_at", "type": "string"},
+          "sort": {"default": -1, "enum": [1, -1], "type": "integer", "format": "int32"}
+        },
+        "required": ["userId", "limit", "skip"]
+      }
+    }
+  }
+}

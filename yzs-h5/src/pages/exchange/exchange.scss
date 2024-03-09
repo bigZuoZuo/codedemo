@@ -1,0 +1,76 @@
+.exchange-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #1b1135;
+  padding: 30px;
+  .exchange-name{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 28px;
+  }
+  .exchange-tips{
+    margin-left: 20px;
+    color: #8568D6;
+    font-size: 28px;
+  }
+  .exchange-content-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #1e153f;
+    border-radius: 42px;
+    opacity: 1;
+    border: 2px solid #291e50;
+    height: 86px;
+  }
+  .at-form::after,
+  .at-input::after{
+		display: none;
+	}
+  .at-form,
+  .at-input{
+    padding: 10px 0;
+    background: transparent;
+    label{
+      color: #635a78;
+    }
+    input{
+      color: #fff;
+      text-align: left;
+      box-sizing: border-box;
+    }
+  }
+  .at-input{
+    margin-left: 0;
+    label{
+      padding-left: 40px;
+    }
+    input{
+      padding-left: 30px;
+    }
+  }
+
+  .exchange-footer {
+    padding: 0 24px;
+  }
+
+  .exchange-btn {
+    margin: calc(100vh - 720px) auto 0;
+    width: 629px;
+    height: 96px;
+    background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+    box-shadow: inset 0px 0px 10px 4px rgba(173, 149, 255, 0.19);
+    border-radius: 58px 58px 58px 58px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 96px;
+    &.delivery-remove{
+      color: rgba(255, 255, 255, 1);
+      border: 2px solid #291e50;
+      background: transparent;
+    }
+  }
+}

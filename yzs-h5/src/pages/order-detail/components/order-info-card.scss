@@ -1,0 +1,73 @@
+.order-info-page-card {
+  margin-top: 32px;
+
+  .order-info-body {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    box-sizing: border-box;
+    background: #1e153f;
+    background-blend-mode: overlay;
+    mix-blend-mode: normal;
+    border: 2px solid #291e50;
+    border-radius: 40px;
+    &.pay{
+      margin-top: 32px;
+      height: 240px;
+    }
+  }
+
+  .order-info-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    &.final{
+      .order-info-value{
+        color: #9373FF;
+      }
+    }
+  }
+
+  .order-info-label {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    &.time{
+      font-weight: lighter;
+    }
+  }
+
+  .order-info-value {
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'D-DIN-Bold';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+    color: #fff;
+    &.pay{
+      font-weight: lighter;
+    }
+    &.no{
+      padding-left: 10%;
+      font-family: 'DIN-Regular';
+    }
+  }
+
+
+  .order-info-extra {
+    margin-left: 20px;
+    height: 32px;
+    width: 32px;
+    background: url("../../../assets/icons/copy.png") no-repeat top left;
+    background-size: 100%;
+  }
+
+}

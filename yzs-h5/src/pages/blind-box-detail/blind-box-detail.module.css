@@ -1,0 +1,426 @@
+.container {
+  display: block;
+  position: relative;
+  min-height: 100vh;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0 40px 70px;
+}
+
+.navigation-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 5001;
+}
+
+.box-bg-line,
+.box-bg-border,
+.box-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.box-bg-line {
+  /* z-index: 2; */
+  top: 23px;
+}
+
+.box-bg-border {
+  background-color: #1b1135;
+  border-radius: 66px;
+}
+
+.content-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  height: 1398px;
+  box-sizing: border-box;
+  padding: 13px 36px;
+}
+
+.blind-box-content-container {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url("../../assets/v2/blind-box-line-bg.png") no-repeat left 10px;
+  background-size: 100% 1150px;
+}
+
+.how-play {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blind-box-detail-header-play {
+  background: #000;
+  border: 2px solid #6664a9;
+  width: 130px;
+  height: 58px;
+  line-height: 58px;
+  box-shadow: 0 5px 10px #343682;
+  color: #fff;
+  border-radius: 32px;
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+}
+
+.blind-box-detail-header-title-wrap {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blind-box-detail-header-title {
+  font-weight: bold;
+  font-size: 56px;
+  color: #fff;
+  text-shadow: 0 0 3px #343682;
+}
+
+.blind-box-detail-header-tips {
+  display: block;
+  width: 162px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 24px;
+  background: #7f39b7;
+  text-align: center;
+  color: #fff;
+  margin-top: 14px;
+}
+
+.blind-box-detail-logo-bg {
+  position: absolute;
+  top: 464px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 245px;
+  overflow: hidden;
+}
+
+@keyframes bounce-down {
+  25% {
+    transform: translate3d(0, -20px, 0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  50%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
+.blind-box-detail-box {
+  width: 284px;
+  height: 327px;
+  display: block;
+  margin: 132px auto 0;
+  animation: bounce-down 1.6s linear infinite;
+}
+
+.blind-box-detail-hand {
+  margin-top: 46px;
+  width: 565px;
+  height: 315px;
+  display: block;
+  animation: bounce-down 2.2s linear infinite;
+}
+
+.blind-box-detail-footer-bottom {
+  justify-self: flex-end;
+  width: 503px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  border-radius: 55px;
+  background: #1b1135;
+  border: 2px solid #9b83ba;
+  box-shadow: 0 5px 5px #2b205d;
+  color: #fff;
+  margin: auto auto 0;
+  padding: 0;
+}
+
+.show-blind-box-collection {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 34px;
+  padding-bottom: 30px;
+}
+
+.show-blind-box-collection-icon {
+  width: 101px;
+  height: 96px;
+  display: block;
+}
+
+.show-blind-box-how-to-play-dialog :global(.at-float-layout__container) {
+  /* background: transparent; */
+
+  /* position: relative; */
+  background-color: transparent;
+}
+
+.blind-box-hud {
+  display: block;
+  position: absolute;
+  height: 236px;
+  width: 100%;
+  top: 16px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.blind-box-hud-bg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 236px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.show-blind-box-how-to-play-header {
+  display: flex;
+  height: 138px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.show-blind-box-how-to-play-logo {
+  width: 276px;
+  height: 36px;
+  display: block;
+}
+
+.show-blind-box-how-to-play-close-icon {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 59px;
+  height: 59px;
+}
+
+.show-blind-box-how-to-play-tabbar {
+  flex: 1;
+  overflow: hidden;
+}
+
+.show-blind-box-how-to-play-tabbar :global(.at-tabs__header) {
+  background-color: transparent;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.show-blind-box-how-to-play-tabbar :global(.at-tabs__item) {
+  color: rgb(255 255 255 / 50%);
+  font-size: 36px;
+}
+
+.show-blind-box-how-to-play-tabbar :global(.at-tabs__item--active) {
+  /* padding: 0; */
+  color: #fff;
+}
+
+.show-blind-box-how-to-play-tabbar :global(.at-tabs__underline),
+.show-blind-box-how-to-play-tabbar :global(.at-tabs__item-underline) {
+  display: none;
+}
+
+.show-blind-box-how-to-play-dialog :global(.at-float-layout__container) {
+  max-height: 80vh;
+  min-height: 80vh;
+  border-radius: 48px 48px 0 0;
+}
+
+.show-blind-box-how-to-play-dialog :global(.layout-body) {
+  min-height: auto !important;
+  max-height: none !important;
+  height: 80vh !important;
+  box-sizing: border-box;
+  padding: 0 !important;
+}
+
+.show-blind-box-how-to-play-dialog :global(.layout-body__content) {
+  min-height: auto !important;
+  max-height: none !important;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.show-blind-box-how-to-play-dialog :global(.at-tabs) {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-blind-box-how-to-play-dialog :global(.at-tabs__body) {
+  /* flex: 1; */
+  height: calc(100% - 97px);
+}
+
+.show-blind-box-how-to-play-dialog :global(.at-tabs-pane) {
+  height: 100%;
+}
+
+.show-blind-box-how-to-play-tabbar :global(.at-tabs__item:first-child::after) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 40%;
+  width: 2px;
+  background-color: #fff;
+  content: " ";
+  margin: auto 0;
+}
+
+.show-blind-box-how-to-play-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blind-box-how-to-play-panel {
+  padding: 94px 81px;
+  box-sizing: border-box;
+  height: 100%;
+  display: block;
+}
+
+.blind-box-how-to-play-panel-content-container {
+  max-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.blind-box-how-to-play-panel-content {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 34px;
+  display: block;
+}
+
+.blind-box-collection-panel-title {
+  display: block;
+  padding-top: 32px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.blind-box-collection-panel-slogan {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  width: 162px;
+  height: 42px;
+  line-height: 42px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #672da1;
+  margin: 23px auto 64px;
+  border-radius: 6px;
+}
+
+.blind-box-collection-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 79px;
+}
+
+.blind-box-collection-item {
+  width: 263px;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 107px;
+}
+
+.blind-box-collection-item-image-wrap {
+  width: 263px;
+  height: 302px;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  padding: 47px 7px 10px;
+  position: relative;
+}
+
+.blind-box-collection-item-image-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.blind-box-collection-item-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  object-fit: cover;
+}
+
+.blind-box-collection-image-mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.blind-box-collection-item-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-top: 27px;
+}
+
+.blind-box-collection-item-level-icon {
+  width: 112px;
+  height: 112px;
+  position: absolute;
+  right: 32px;
+  top: -32px;
+}

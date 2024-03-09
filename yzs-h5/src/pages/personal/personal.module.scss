@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  background-color: #140c33;
+  // background: url(./components/personal-menu/static/bg.png) no-repeat;
+  // background-position: left -4vh;
+  // background-size: 100% 104vh;
+  // background: linear-gradient(to right bottom, #150931 60%, #32114b 100%);
+  // background: linear-gradient(#150931 0%, #ede7ff 100%);
+  min-height: 100vh;
+  .wrap{
+    position: relative;
+    z-index: 1;
+    // height: calc(100vh - 312px);
+    // background: url(./components/personal-menu/static/personal-bg.png) no-repeat;
+    // background-position: left top;
+    // background-size: 100% 100%;
+  }
+  .scan{
+    margin: 30px 0 0 620px;
+    width: 50px;
+    height: 50px;
+    background: url(../../assets/icons/scan.png) no-repeat center center;
+    background-size: 100%;
+    &.fullscreen{
+      margin: 0;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      width: 100vw;
+      height: 100vh;
+      background: #1b1135;
+    }
+    .close {
+      display: none;
+      position: fixed;
+      right: 40px;
+      top: 0px;
+      bottom: 0;
+      width: 59px;
+      height: 59px;
+      color: #FFF;
+      font-family: 'D-DIN-Bold';
+      font-size: 70px;
+      transform: rotate(45deg);
+      z-index: 100;
+      cursor: pointer;
+      &.fullscreen{
+        display: block;
+      }
+    }
+    @keyframes fixed {
+      0% {
+        position: fixed !important;
+      }
+      100% {
+        position: relative !important;
+      }
+    }
+    .reader{
+      z-index: 199;
+      animation: fixed .5s linear 1;
+      &.fullscreen{
+        margin-top: 10vh;
+        display: block;
+      }
+    }
+    @keyframes circle {
+      0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+      }
+      100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+      }
+    }
+    .buttonText{
+      display: inline-block;
+      font-weight: 500;
+      color: #fff;
+      font-size: 24px;
+      zoom: 1.2;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      z-index: 10;
+    }
+    .buttonLoad {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      z-index: 10;
+      width: 200px;
+      height: 200px;
+      border: 6px solid #401896;
+      border-radius: 50%;
+    }
+    .rightCircle{
+      animation: circle 2s linear infinite;
+      width: 210px;
+      height: 210px;
+      border: 10px solid transparent;
+      border-radius: 50%;
+      border-top: 10px solid #8568d6;
+      border-right: 10px solid #8568d6;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0) rotate(45deg);
+      z-index: 10;
+    }
+  }
+}

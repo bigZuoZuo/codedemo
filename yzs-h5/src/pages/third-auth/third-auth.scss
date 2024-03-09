@@ -1,0 +1,100 @@
+/* pages/comment/comment.wxss */
+.third-auth-page-container {
+  background: #1b1135;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+  .auth{
+    &-icon{
+      padding: 6px;
+      background: #fff;
+      margin-top: 70px;
+      width: 114px;
+      height: 114px;
+      border-radius: 30px;
+    }
+    &-super-title{
+      margin-top: 20px;
+      font-size: 34px;
+      font-weight: 400;
+    }
+    &-box{
+      margin-top: 50px;
+      padding: 40px 60px;
+      height: 100%;
+      width: 92%;
+      background: #1e153f;
+      background-blend-mode: overlay;
+      mix-blend-mode: normal;
+      border: 2px solid #291e50;
+      box-sizing: border-box;
+      border-radius: 60px;
+      position: relative;
+    }
+    &-title{
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    &-subtitle{
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    &-checkbox {
+      position: relative;
+      padding-left: 50px;
+      &::after {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        content: " ";
+        margin-top: 4px;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+      &.checked{
+        &::before {
+          position: absolute;
+          content: " ";
+          left: 0%;
+          top: 0%;
+          margin: 12px 0 0 8px;
+          width: 18px;
+          height: 18px;
+          background: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+    &-tips{
+      font-size: 24px;
+      margin-top: 30px;
+      color: red;
+    }
+    &-button {
+      margin: 50px auto 0;
+      width: 86%;
+      height: 84px;
+      background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+      box-shadow: inset 0px 0px 10px 4px rgba(173, 149, 255, 0.19);
+      border-radius: 58px 58px 58px 58px;
+      font-size: 32px;
+      letter-spacing: 1px;
+      color: #FFF;
+      text-align: center;
+      line-height: 84px;
+      &::after,
+      &::before{
+        display: none;
+      }
+      // &.disabled{
+      //   background: $gray5_color;
+      //   box-shadow: 0px 10px 35px 0px rgba($color: $gray5_color, $alpha: 0.25);
+      // }
+    }
+  }
+}

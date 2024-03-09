@@ -1,0 +1,39 @@
+.profile {
+  padding: 50px;
+  display: flex;
+}
+
+.info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 32px;
+  padding: 12px 0;
+}
+
+.avatar {
+  min-width: 112px;
+  min-height: 112px;
+  max-height: 112px;
+  max-width: 112px;
+  border: 6px solid hsl(0deg 0% 100%);
+  border-radius: 50%;
+  background: hsl(0deg 0% 100%);
+}
+
+.nickname {
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: bold;
+  color: #ffffff;
+  word-break: break-all;
+}
+
+.phone {
+  font-size: 23px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: DIN-Regular, DIN;
+  font-weight: lighter;
+}

@@ -1,0 +1,171 @@
+.myShare {
+    background-color: #1C1134;
+
+    .tabs {
+        display: flex;
+        color: aliceblue;
+        height: 116px;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0px 2px 0px 0px #382268;
+        // box-sizing: border-box;
+
+        font-size: 34px;
+        font-family: Abel-Regular, Abel;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.3);
+
+
+
+        .currentTab {
+            color: #9373FF;
+            height: 100%;
+            line-height: 116px;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                // width: 100%;
+                width: 142px;
+                height: 6px;
+
+                background: #9373FF;
+                box-shadow: 10px 0px 24px 0px rgba(181, 107, 255, 0.65);
+                opacity: 1;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 32px;
+        justify-content: space-between;
+        margin-top: 32px;
+        
+
+        .item {
+            width: 350px;
+            background: #22143E;
+            border-radius: 40px 40px 40px 40px;
+            opacity: 1;
+            border: 2px solid #331E5D;
+            box-sizing: border-box;
+            margin-bottom: 24px;
+            padding: 20px 20px 32px;
+            box-sizing: border-box;
+
+            .cover {
+                width: 310px;
+                height: 310px;
+                border-radius: 32px 32px 32px 32px;
+                opacity: 1;
+                display: block;
+                margin-bottom: 20px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            .cover_null {
+                background-color: #1C1133;
+                font-size: 24px;
+                font-family: Abel-Regular, Abel;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .null_img {
+                    width: 158px;
+                    height: 148px;
+                    margin: 0 auto;
+                }
+            }
+
+
+            .title {
+                font-size: 28px;
+                font-family: Abel-Regular, Abel;
+                font-weight: 400;
+                color: #FFFFFF;
+                height: 40px;
+                line-height: 40px;
+                display: block;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: relative;
+
+                .audit_reject {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                    width: 96px;
+                    height: 34px;
+                    // padding: 4px 8px;
+                    border-radius: 8px 8px 8px 8px;
+                    box-sizing: border-box;
+                    border: 2px solid #FF3939;
+                
+                    float: right;
+                    text-align: center;
+                    line-height: 34px;
+                    .audit_reject_text{
+                        font-size: 20px;
+                        font-family: Abel-Regular, Abel;
+                        font-weight: 400;
+                        color: #FF3939;
+                        scale: 0.83;
+                    }
+                }
+            }
+            .titlePadding{
+                padding-right: 100px;
+            }
+
+
+
+            .foot,
+            .saveTime {
+                display: flex;
+                align-items: center;
+                height: 42px;
+                margin-top: 22px;
+                font-size: 26px;
+                font-family: Abel-Regular, Abel;
+                font-weight: 400;
+                color: rgba(235, 235, 245, 0.65);
+
+                .star {
+                    // font-size: 24px;
+                    width: 25px;
+                    height: 24px;
+                    display: block;
+                    margin-right: 8px;
+
+                }
+
+            }
+
+            .saveTime {
+                font-size: 20px;
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.list-filter-container {
+  padding: 0 40px;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  .list-filter-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 500;
+    &.active{
+      &::after{
+        background: url('../../assets/icons/up-arrow.png') no-repeat top left;
+        background-size: 100%;
+      }
+    }
+    &::after{
+      content: ' ';
+      margin-left: 20px;
+      display: inline-block;
+      background: url('../../assets/icons/down-arrow.png') no-repeat top left;
+      background-size: 100%;
+      width: 32px;
+      height: 32px;
+      transition: all .15s ease-in-out;
+    }
+  }
+  .list-filter-option{
+    padding: 18px 60px 18px 30px;
+    position: absolute;
+    top: 60px;
+    line-height: 52px;
+    font-size: 27px;
+    font-weight: 500;
+    width: 110px;
+    word-break: keep-all;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    opacity: 1;
+    &.created_at{
+      left: 10px;
+    }
+    &.price{
+      left: calc(50vw - 110px);
+    }
+    &.name{
+      right: 30px;
+    }
+    .active{
+      color: #9373ff;
+    }
+  }
+}
+
+.list-tips{
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  background: #301F54;
+  font-size: 26px;
+  font-weight: 400;
+  color: #D4C8FF;
+  line-height: 80px;
+  text-align: center;
+}

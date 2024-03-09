@@ -1,0 +1,35 @@
+.commentSendBox {
+    padding: 16px 32px;
+    box-sizing: border-box;
+    border-radius: 32px 32px 0px 0px;
+    display: flex;
+
+    .input_comment {
+        flex: 1;
+        margin-right: 20px;
+        background: #F8F8F8;
+        border-radius: 94px 94px 94px 94px;
+        padding: 16px 24px;
+        line-height: 40px;
+        word-break: break-all
+    }
+
+    .sendBtnBox {
+        position: relative;
+        width: 120px;
+        .sendBtn {
+            width: 120px;
+            height: 72px;
+            background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+            border-radius: 116px 116px 116px 116px;
+            font-size: 28px;
+            font-family: Abel-Regular, Abel;
+            font-weight: 400;
+            color: #FFFFFF;
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+}

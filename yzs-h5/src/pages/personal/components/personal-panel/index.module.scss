@@ -1,0 +1,88 @@
+.panel {
+  width: 679px;
+  // height: 244px;
+  height: 376px;
+  background: linear-gradient(81deg, #8568d6 0%, #401896 70%);
+  box-shadow: inset 0px 0px 19px 8px rgba(173, 149, 255, 0.19);
+  // border: 1px solid red;
+  border-radius: 36px;
+  margin: 0 auto;
+  padding: 20px 19px;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  box-sizing: border-box;
+  :global{
+    .at-modal__container{
+      background: rgba(38, 38, 38, 1);
+      width: 80vw;
+      .at-modal__header{
+        color: #fff;
+        &::after{
+          display: none;
+        }
+      }
+      .at-modal__content{
+        color: #fff;
+        padding: 30px 50px;
+        text-align: center;
+        min-height: 70px;
+        &::after{
+          display: none;
+        }
+        taro-text-core{
+          word-break: break-all;
+        }
+      }
+      .at-modal__footer{
+        border-top: 1PX solid #8568d6;
+        &::before{
+         display: none;
+        }
+        taro-button-core{
+          font-size: 32px;
+          background: rgba(0, 0, 0, 0.1);
+          border-radius: 0;
+          color: #8568d6;
+          &:first-child{
+            color: #fff;
+            border-right: 1PX solid #8568d6;
+          }
+        }
+      }
+    }
+    taro-button-core+taro-button-core{
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.item {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+
+  hei
+  :global{
+    .index-2,
+    .index-3{
+      opacity: 0.79;
+    }
+  }
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 0px;
+}
+
+.text {
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.7;
+}

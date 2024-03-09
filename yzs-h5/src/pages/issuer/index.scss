@@ -1,0 +1,117 @@
+@import '../../global.scss';
+
+.issuer-page{
+  background: #1b1135;
+  min-height: 100vh;
+  .header-banner{
+    padding: 34px;
+    box-sizing: border-box;
+    position: relative;
+    height: 390px;
+    width: 100%;
+    background: transparent;
+    .mask{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 0 30px 30px;
+    }
+    .content{
+      margin-top: 100px;
+      position: relative;
+      @include flex-row-start-center;
+      color: #fff;
+      .avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid rgba($color: #fff, $alpha: .3);
+      }
+      .title{
+        text-indent: 20px;
+        font-size: 36px;
+        font-weight: 600;
+        color: rgba($color: #fff, $alpha: .8);
+      }
+    }
+  }
+  .issuer-desc{
+    padding: 34px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba($color: #fff, $alpha: .6);
+  }
+  .collection-title{
+    padding: 0 34px;
+    box-sizing: border-box;
+    font-size: 34px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .collection-view-container{
+    padding: 0 34px;
+    @include flex-row-start-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    .collection-box {
+      margin-top: 34px;
+      padding: 20px;
+      background: #1e153f;
+      background-blend-mode: overlay;
+      mix-blend-mode: normal;
+      border: 2px solid #291e50;
+      box-sizing: border-box;
+      border-radius: 20px;
+      position: relative;
+      .collection-image {
+        position: relative;
+        width: 290px;
+        height: 274px;
+        border-radius: 16px;
+      }
+      .collection-image-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        width: 290px;
+        height: 180px;
+        z-index: 99;
+      }
+
+      .collection-info {
+        @include flex-column-start-start;
+        text-align: left;
+        .title {
+          padding: 10px 0 0;
+          font-size: 28px;
+          font-weight: 600;
+          color: rgba($color: #fff, $alpha: .6);
+          text-align: left;
+          max-width: 300px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .collection-footer {
+          @include flex-row-between-center;
+          width: 100%;
+          font-size: 26px;
+          font-weight: 400;
+          color: #fff;
+          .collection-subtitle {
+            font-size: 26px;
+            font-weight: 400;
+            color: #fff;
+            display: block;
+            padding-top: 22px;
+          }
+        }
+      }
+    }
+  }
+}

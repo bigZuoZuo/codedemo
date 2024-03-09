@@ -1,0 +1,97 @@
+.collectPage {
+    color: antiquewhite;
+    // height: 100vh;
+    background: #1C1134;
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 32px;
+        justify-content: space-between;
+
+        .item {
+            width: 350px;
+            height: 524px;
+            background: #22143E;
+            border-radius: 40px 40px 40px 40px;
+            opacity: 1;
+            border: 2px solid #331E5D;
+            box-sizing: border-box;
+            margin-bottom: 24px;
+            padding: 20px 20px 24px;
+            box-sizing: border-box;
+
+            .cover {
+                width: 310px;
+                height: 310px;
+                border-radius: 32px 32px 32px 32px;
+                opacity: 1;
+                display: block;
+                margin-bottom: 20px;
+                img{
+                    object-fit: cover;
+                }
+            }
+
+            .title {
+                font-size: 26px;
+                font-family: Abel-Regular, Abel;
+                font-weight: 400;
+                color: #FFFFFF;
+                line-height: 40px;
+                display: block;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .tabs {
+                display: flex;
+                margin-top: 8px;
+
+                .tab {
+                    height: 36px;
+                    padding: 0 8px 0 6px;
+                    font-size: 24px;
+                    font-family: Abel-Regular, Abel;
+                    font-weight: 400;
+                    color: #402E13;
+                    background: #DDCB8A;
+                    border-radius: 4px 4px 4px 4px;
+                    display: block;
+                    margin-right: 12px;
+                }
+
+                .tab2 {
+                    background-color: #684DC3;
+                    color: #fff;
+                }
+            }
+
+            .footStatus {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 42px;
+                margin-top: 22px;
+
+                .price {
+                    height: 40px;
+                    font-size: 26px;
+                    font-family: Abel-Regular, Abel;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 40px;
+                }
+            }
+
+            .star {
+                // font-size: 24px;
+                width: 25px;
+                height: 24px;
+            }
+        }
+
+    }
+}

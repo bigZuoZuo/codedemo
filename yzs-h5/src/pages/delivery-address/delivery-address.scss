@@ -1,0 +1,176 @@
+.delivery-address-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #1b1135;
+  padding: 30px;
+  .delivery-address-content-container{
+    margin-top: 20px;
+    background: #1e153f;
+    border-radius: 30px;
+    opacity: 1;
+    border: 2px solid #291e50;
+    height: 460px;
+  }
+  .at-input__title{
+    width: 190px;
+  }
+  .at-form::after,
+  .at-list__item::after,
+  .at-input::after,
+  .at-list::after{
+		display: none;
+	}
+  .at-list__item:active{
+    background: transparent;
+    opacity: 0.6;
+  }
+  .picker-value{
+    .at-list__item-content{
+      margin-right: 0;
+    }
+    .item-content__info-note {
+      text-align: right;
+      width: 100%;
+    }
+  }
+  .picker-no-value{
+    .at-list__item-content{
+      margin-right: 0;
+    }
+    .item-content__info-note {
+      text-align: right;
+      width: 100%;
+      color: #635a78;
+    }
+  }
+  .at-list,
+  .at-form,
+  .at-input{
+    background: transparent;
+    label{
+      color: #635a78;
+    }
+    input{
+      color: #fff;
+      text-align: right;
+      box-sizing: border-box;
+    }
+  }
+  .at-input{
+    margin-left: 0;
+    label{
+      padding-left: 40px;
+    }
+    input{
+      padding-left: 30px;
+    }
+  }
+
+  .delivery-address-footer {
+    padding: 0 24px;
+  }
+
+  .delivery-address-btn {
+    margin: 34.5vh auto 0;
+    width: 629px;
+    height: 96px;
+    background: linear-gradient(81deg, #8568D6 0%, #401896 100%);
+    box-shadow: inset 0px 0px 10px 4px rgba(173, 149, 255, 0.19);
+    border-radius: 58px 58px 58px 58px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 96px;
+    &.delivery-remove{
+      color: rgba(255, 255, 255, 1);
+      border: 2px solid #291e50;
+      background: transparent;
+    }
+  }
+
+  .at-list__item {
+    padding-left: 0;
+    &::after{
+      left: 0;
+    }
+  }
+
+  .item-content__info {
+    display: flex;
+  }
+
+  .item-content__info-title {
+    width: 190px;
+    margin-left: 40px;
+    margin-right: 0;
+    color: #635a78;
+  }
+
+  .item-content__info-note {
+    color: #fff;
+    font-size: 0.68267rem;
+    height: 0.95573rem;
+    line-height: 1.5;
+  }
+
+  .delivery-address-list-item-footer{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    .delivery-address-list-item-name {
+      font-size: 32px;
+      color: #635a78;
+    }
+    .delivery-address-list-icon {
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      display: block;
+      margin-right: 32px;
+    }
+
+    .delivery-address-list-item-info {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      box-sizing: border-box;
+      flex-direction: column;
+      padding-right: 24px;
+    }
+  }
+  .area-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .area-label{
+      padding-top: 16px;
+      padding-left: 40px;
+      color: #635a78;
+      font-size: 32px;
+    }
+  }
+  .area-address{
+    height: 160px;
+    width: 500px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    .taro-textarea{
+      text-align: right;
+      height: 130px;
+      background: transparent;
+      resize: none;
+    }
+  }
+  .address_input{
+    height: 96px;
+    &::before{
+      width: 160px;
+      padding-right: 18px;
+    }
+  }
+}

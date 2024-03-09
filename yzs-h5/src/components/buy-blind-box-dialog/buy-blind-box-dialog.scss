@@ -1,0 +1,120 @@
+.buy-blind-box-dialog-container {
+  &.open-box{
+    .at-curtain__btn-close--bottom{
+      display: none;
+    }
+  }
+  .blind-box-open{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @keyframes zoom-in-zoom-out {
+      0% {
+        filter: drop-shadow(0px 0px 30px #3cc7ca);
+      }
+      50% {
+        filter: drop-shadow(0px 0px 120px #8cf0f2);
+      }
+      100% {
+        filter: drop-shadow(0px 0px 230px #c7f6f6);
+      }
+    }
+    .blind-box-image{
+      width: 100%;
+      height: 100%;
+      animation: zoom-in-zoom-out 2s linear infinite;
+    }
+  }
+  .blind-box-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .at-curtain__btn-close--bottom{
+    border-color: #d6c1f7;
+    &::after,
+    &::before{
+      background: #d6c1f7;
+    }
+  }
+  .blind-box-order-bg {
+    width: 620px;
+    height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  .blind-box-order-dialog {
+    margin: 0 auto;
+    // padding-top: 410px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: 620px;
+    box-sizing: border-box;
+    background: url("../../assets/v2/blind-box-line-bg2.png") no-repeat left 46px;
+    background-size: 100% 750px;
+
+    .blind-box-detail-box {
+      width: 274px;
+      height: 315px;
+      display: block;
+      margin: 12px auto 0;
+    }
+
+    .blind-box-detail-hand {
+      margin-left: -56px;
+      margin-top: -90px;
+      width: 590px;
+      height: 315px;
+      display: block;
+      transform: scale(.85);
+      // animation: bounce-down 2.2s linear infinite;
+    }
+
+  }
+
+  .blind-box-order-success-label {
+    margin: 110px auto 70px;
+    font-size: 48px;
+    font-family: PingFang-SC-Bold, PingFang-SC;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+  }
+
+  .blind-box-order-btn {
+    width: 503px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    border-radius: 55px;
+    background: #1b1135;
+    border: 2px solid #9b83ba;
+    box-shadow: 0 5px 5px #2b205d;
+    color: #fff;
+    margin: -40px auto 0;
+    padding: 0;
+  }
+
+  .blind-box-order-wait-label {
+    font-size: 36px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+  }
+}

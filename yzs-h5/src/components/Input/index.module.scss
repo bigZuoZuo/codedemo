@@ -1,0 +1,33 @@
+.input_box {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 0.68267rem;
+  font-weight: 400;
+  font-family: PingFang SC-Medium, PingFang SC;
+  .input_ {
+    border: none;
+    flex: 1;
+    &::placeholder{
+        color: #635a78;
+    }
+  }
+}
+.inpu_label {
+  &::before {
+    content: attr(data-label);
+    color: #635a78;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+}
+.input_border {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.input_count{
+  &::after{
+    content: attr(data-count);
+    font-size: 28px;
+    font-family: Abel-Regular, Abel;
+  }
+}

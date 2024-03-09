@@ -1,0 +1,137 @@
+.slogan {
+  padding: 10vh 0 0 58px;
+  font-size: 80px;
+  color: #fff;
+  line-height: 94px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.slogan-text {
+  display: block;
+}
+
+.content-container {
+  margin: 10vh 70px 0;
+  min-height: 622px;
+  box-sizing: border-box;
+  padding: 60px 100px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 1%);
+  border-radius: 60px;
+  opacity: 1;
+  border: 2px solid rgb(255 255 255 / 30%);
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(15px);
+}
+
+.title {
+  text-align: center;
+  display: block;
+  font-size: 40px;
+  font-family: "PingFang SC-Bold", "PingFang SC";
+  font-weight: bold;
+  color: #fff;
+  line-height: 56px;
+  text-shadow: 0 20px 120px rgb(0 0 0 / 50%);
+  padding-bottom: 80px;
+}
+
+.login-btn {
+  display: flex;
+  height: 103px;
+  background: rgb(65 55 114 / 77.6%);
+  border-radius: 74px;
+  opacity: 1;
+  border: 3px solid rgb(71 86 203 / 41.2%);
+  padding: 0 80px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.login-icon {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.login-text {
+  font-size: 32px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff;
+}
+
+.protocol {
+  padding-top: 56px;
+  font-size: 24px;
+  font-family: "PingFang SC-Medium", "PingFang SC";
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  width: 550px;
+  margin-left: -20px;
+}
+
+.protocol-link {
+  color: #8dd6ed;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.checked::after {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  bottom: 20%;
+  right: 20%;
+  content: " ";
+  background: #fff;
+  border-radius: 50%;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 20px 0 70px;
+}
+
+.footer-text {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text::before,
+.footer-text::after {
+  content: " ";
+  left: -100px;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 20px;
+}

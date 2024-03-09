@@ -1,0 +1,38 @@
+.order-page-container {
+  // 渲染的高度不够，先用 padding 挤下去，后面再找找问题？ Taro 的问题？
+  padding: 24px 24px 170px;
+
+  .order-item {
+    margin-bottom: 24px;
+  }
+
+  .navigation-bar_btn_gohome {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .custom-weui-navigation-bar__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 174px;
+    height: 64px;
+    border: 1px solid #eaeaea;
+    border-radius: 32px;
+    position: relative;
+  }
+
+  .custom-weui-navigation-bar__buttons::after {
+    position: absolute;
+    content: ' ';
+    width: 1px;
+    height: 37px;
+    background: rgba(0, 0, 0, 0.2);
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

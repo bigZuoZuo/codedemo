@@ -1,0 +1,42 @@
+.splited-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.splited-tab-item {
+  width: 148px;
+  height: 70px;
+  background-image: url(./images/img-btn-bg.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 20px 70px;
+  box-shadow: -2px 0px 0px 0px #29134e;
+  font-size: 24px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 70px;
+  text-align: center;
+}
+
+.splited-tab-item.small {
+  width: 120px;
+}
+
+.splited-tab-item.medium {
+  width: 144px;
+}
+
+.splited-tab-item:first-child {
+  border-radius: 200px 0px 0px 200px;
+}
+
+.splited-tab-item:last-child {
+  border-radius: 0px 200px 200px 0px;
+}
+
+.splited-tab-item.active {
+  background-image: url(./images/img-btn-bg1.png);
+}

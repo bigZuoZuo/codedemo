@@ -1,0 +1,46 @@
+.tab-bar {
+	z-index: 4999;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 190px;
+	font-size: 32px;
+	background: transparent;
+}
+.tab-bar-wrap {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	margin-top: 35px;
+	height: 155px;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 0px -10px 60px 2px rgba(41, 39, 130, 0.1), inset 0px 2px 1px 2px rgba(255, 255, 255, 0.12);
+	border-radius: 100px 100px 0px 0px;
+	// filter: blur(1px);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+.tab-bar-wrap-item {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.tab-bar-wrap-item-icon {
+	width: 72px;
+	height: 75px;
+}
+.tab-bar-wrap-item-text {
+	color: #fff;
+	font-size: 24px;
+}
+.tab-bar-select{
+	width: 114px;
+	height: 50px;
+	background: url(../../assets/icons/bubble.png) no-repeat center center;
+	background-size: 100%;
+}
+

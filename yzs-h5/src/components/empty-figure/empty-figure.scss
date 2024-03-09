@@ -1,0 +1,39 @@
+.empty-figure {
+  padding-top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .figure {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .empty-tips {
+    font-size: 28px;
+    color: #9373FF;
+    margin-top: 32px;
+    &.down{
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  .v2-figure {
+    width: 277px;
+    height: 239px;
+  }
+  .down {
+    width: 508px;
+    height: 366px;
+  }
+  .v2-empty-tips {
+    font-size: 24px;
+    font-family: PingFang SC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #9373ff;
+  }
+}
