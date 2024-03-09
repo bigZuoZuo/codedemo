@@ -1,0 +1,31 @@
+<template>
+  <div>
+    <BasicTable
+      @register="registerTable"
+    />
+  </div>
+</template>
+<script lang="ts">
+import { BasicTable, useTable } from '/@/components/Table';
+import { getTableColumns, getTableFormConfig } from './data';
+import {
+  getGoodsStockListApi,
+} from '/@/api/goods/stock';
+export default {
+  name: 'Stock'
+}
+</script>
+<script lang="ts" setup>
+const [registerTable] = useTable({
+  api: getGoodsStockListApi,
+  columns: getTableColumns(),
+  useSearchForm: true,
+  formConfig: getTableFormConfig(),
+  showTableSetting: true,
+  tableSetting: { fullScreen: true },
+  showIndexColumn: true,
+  // pagination: false,
+});
+
+
+</script>
